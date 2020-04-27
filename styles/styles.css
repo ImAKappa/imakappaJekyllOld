@@ -1,0 +1,89 @@
+/* ImAKappa Personal Website CSS Style Sheet */
+
+/* || GENERAL STYLES */
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Oswald', Helvetica, Arial, sans-serif;
+  margin: 1.5em;
+}
+
+h1 {
+  font-size: 4rem; 
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+p,
+ul {
+  font-size:  1.5rem;
+  line-height: 1.6;
+  margin: 0em 2.5em;
+}
+
+/* || Utilities */
+
+.links-list li {
+  display: inline-block;
+  margin: 2px 4px;
+}
+
+.links-list a {
+  background-color: blue;
+  border: 2px solid blue;
+  color:white;
+  display: inline-block;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5rem;
+  border-radius: 3px;
+  
+  
+  transition-duration: 0.4s;
+}
+
+.links-list a:focus {
+  background-color: white;
+  color: black;
+}
+
+.links-list a:hover {
+  background-color: white;
+  color: black;
+}
+
+.links-list a:active {
+  background-color: lightgray;
+  color: black;
+}
+
+.card {
+  display: block;
+  border: 2px solid gray;
+  padding: 16px 32px;
+  margin-bottom: 15px;
+  text-align: left;
+  font-size: 16px;
+  transition-duration: 0.4s;
+}
+
+.card:hover {
+  background-color: gray;
+}
+
+.card h2 {
+  font-size: 2rem;
+  text-align: left;
+
+}
+
+.yt-vid {
+  max-height: 100%;
+  max-width: 100%;
+}
