@@ -11,6 +11,10 @@ body {
   margin: 1.5em;
 }
 
+header {
+  
+}
+
 h1 {
   font-size: 4rem; 
 }
@@ -29,61 +33,37 @@ ul {
 /* || Utilities */
 
 .links-list li {
-  display: inline-block;
-  margin: 2px 4px;
+  
 }
 
 .links-list a {
-  background-color: blue;
-  border: 2px solid blue;
-  color:white;
-  display: inline-block;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 1.5rem;
-  border-radius: 3px;
   
-  
-  transition-duration: 0.4s;
 }
 
 .links-list a:focus {
-  background-color: white;
-  color: black;
+  
 }
 
 .links-list a:hover {
-  background-color: white;
-  color: black;
+  
 }
 
 .links-list a:active {
-  background-color: lightgray;
-  color: black;
+  
 }
 
 .card {
-  display: block;
-  border: 2px solid gray;
-  padding: 16px 32px;
-  margin-bottom: 15px;
-  text-align: left;
-  font-size: 16px;
-  transition-duration: 0.4s;
+  
 }
 
 .card:hover {
-  background-color: gray;
+
 }
 
 .card h2 {
-  font-size: 2rem;
-  text-align: left;
-
+  
 }
 
 .yt-vid {
-  max-height: 100%;
-  max-width: 100%;
+
 }
