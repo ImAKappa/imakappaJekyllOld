@@ -2,6 +2,15 @@
 
 /* || GENERAL STYLES */
 
+/* || COLORS
+
+Black: #000000
+White: #ffffff
+Dark Grey: #514845
+Gray: grey
+
+*/
+
 html {
   font-size: 10px;
 }
@@ -13,36 +22,62 @@ body {
 }
 
 header {
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: row;
   background-color: grey;
+  border-bottom: 2px solid #514845;
+  align-items: center;
   margin: 0;
   padding: 0;
   width: 100%;
 }
 
+main {
+  
+}
+
+
+
 h1 {
   font-size: 3.5rem; 
-  margin: 0 1em;
+  margin: 0 1.5em;
   padding: 0;
-  display: inline-block;
 }
 
 h2 {
+  text-align: center;
   font-size: 2.5rem;
+  margin: 1em;
+  padding: 0;
 }
 
-p,
-ul {
+p {
   font-size:  1.5rem;
   line-height: 1.6;
+  margin: 1.5em;
+  padding: 0;
+}
+
+ul {
   margin: 0;
   padding: 0;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+  margin: 0;
+  width: 100%;
+  color: #ffffff;
+  background-color: grey;
+  border-top: 2px solid #514845;
+  
+}
+
 /* || Utilities */
 
+/*      NAVIGATION LINKS */
 .main-nav {
-  display: inline-block;
   margin: 0;
   padding: 0;
 }
@@ -50,11 +85,10 @@ ul {
 .main-nav li {
   list-style-type: none;
   display: inline-block;
-  vertical-align: center;
 }
 
 .main-nav a {
-  background-color: blue;
+  background-color: grey;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -62,20 +96,22 @@ ul {
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
+  transition-duration: 0.4s;
 }
 
 .main-nav a:focus {
-  
+  background-color: #514845;
 }
 
 .main-nav a:hover {
-  
+  background-color: #514845;
 }
 
 .main-nav a:active {
-  
+  color: #000000;
 }
 
+/*      CARD STYLES */
 .card {
   
 }
