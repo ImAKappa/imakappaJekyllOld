@@ -6,8 +6,8 @@
 
 Black: #000000
 White: #ffffff
-Dark Grey: #514845
-Blue: grey
+Dark Blue: #00004d
+Blue: #1a1aff
 
 */
 
@@ -26,8 +26,8 @@ body {
 header {
   display: inline-flex;
   flex-direction: row;
-  background-color: grey;
-  border-bottom: 2px solid #514845;
+  background-color: #1a1aff;
+  border-bottom: 2px solid #00004d;
   align-items: center;
   justify-content: space-between;
   margin: 0;
@@ -59,9 +59,12 @@ h2 {
 }
 
 h3 {
+  text-align: center;
   font-size: 2rem;
-  margin: 1em;
-  padding: 0;
+  margin: 0;
+  padding: 0.5em 0;
+  background-color: #0000ff;
+  color: white;
 }
 
 p {
@@ -81,8 +84,8 @@ footer {
   margin: 0;
   width: 100%;
   color: #ffffff;
-  background-color: grey;
-  border-top: 2px solid #514845;
+  background-color: #1a1aff;
+  border-top: 2px solid #00004d;
   
 }
 
@@ -100,7 +103,7 @@ footer {
 }
 
 .main-nav a {
-  background-color: grey;
+  background-color: #1a1aff;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -112,11 +115,11 @@ footer {
 }
 
 .main-nav a:focus {
-  background-color: #514845;
+  background-color: #00004d;
 }
 
 .main-nav a:hover {
-  background-color: #514845;
+  background-color: #00004d;
 }
 
 .main-nav a:active {
@@ -132,13 +135,13 @@ footer {
 
 /*      CARD STYLES */
 .card {
-  background-color: grey;
-  border: 2px solid #514845;
+  border: 2px solid #00004d;
   transition-duration: 0.4s;
 }
 
 .card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.40);
+  text-shadow: 2px 2px 5px black;
 }
 
 .card h2 {
