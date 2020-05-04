@@ -7,7 +7,7 @@
 Black: #000000
 White: #ffffff
 Dark Grey: #514845
-Gray: grey
+Blue: grey
 
 */
 
@@ -40,7 +40,7 @@ header {
 }
 
 main {
-  
+  margin: 2em;
 }
 
 
@@ -123,13 +123,22 @@ footer {
   color: #000000;
 }
 
+/*    Container */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
 /*      CARD STYLES */
 .card {
-  
+  background-color: grey;
+  border: 2px solid #514845;
+  transition-duration: 0.4s;
 }
 
 .card:hover {
-
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.40);
 }
 
 .card h2 {
@@ -137,5 +146,7 @@ footer {
 }
 
 .yt-vid {
-
+  max-width: 480;
+  min-width: 270;
+  margin: 0 auto;
 }
