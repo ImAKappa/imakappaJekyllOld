@@ -68,7 +68,7 @@ h3 {
 }
 
 p {
-  font-size:  1.5rem;
+  font-size:  1.6rem;
   line-height: 1.6;
   margin: 1.5em;
   padding: 0;
@@ -110,7 +110,7 @@ footer {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
+  font-size: 1.6rem;
   transition-duration: 0.4s;
 }
 
@@ -141,6 +141,10 @@ footer {
 
 .card:hover {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.40);
+  
+}
+
+.card:hover h3 {
   text-shadow: 2px 2px 5px black;
 }
 
@@ -151,5 +155,4 @@ footer {
 .yt-vid {
   max-width: 480;
   min-width: 270;
-  margin: 0 auto;
 }
