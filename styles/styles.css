@@ -26,8 +26,8 @@ body {
 header {
   display: inline-flex;
   flex-direction: row;
-  background-color: hsl(226, 53%, 40%);
-  border-bottom: 3px solid #00004d;
+  background-color: #113655;
+  border-bottom: 3px solid hsl(36, 10%, 90%);
   align-items: center;
   justify-content: space-between;
   margin: 0;
@@ -48,6 +48,11 @@ h1 {
   margin: 0 1.5em;
   padding: 0;
   color: hsl(36, 10%, 90%);
+  transition-duration: 0.4s;
+}
+
+h1:hover {
+  color: #E7BB41;
 }
 
 h2 {
@@ -59,16 +64,17 @@ h2 {
   padding: 0;
   width: 100%;
   background-color: white;
-  border-bottom: 3px solid #00004d;
+  border-bottom: 2px solid hsl(36, 10%, 90%);
 }
 
 h3 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   margin: 0;
   padding: 0.5em 0;
-  background-color: hsl(226, 53%, 40%);
+  background-color: #113655;
   color: white;
+  transition-duration: 0.4s;
 }
 
 p {
@@ -88,8 +94,8 @@ footer {
   margin: 0;
   width: 100%;
   color: #ffffff;
-  background-color: hsl(226, 53%, 40%);
-  border-top: 2px solid #00004d;
+  background-color: #113655;
+  border-top: 2px solid hsl(36, 10%, 90%);
   
 }
 
@@ -107,7 +113,7 @@ footer {
 }
 
 .main-nav a {
-  background-color: hsl(226, 53%, 40%);
+  background-color: #113655;
   border: none;
   color: white;
   padding: 16px 32px;
@@ -119,11 +125,12 @@ footer {
 }
 
 .main-nav a:focus {
-  background-color: #00004d;
+  background-color: #184C77;
 }
 
 .main-nav a:hover {
-  background-color: #00004d;
+  background-color: #184C77;
+  color: #E7BB41;
 }
 
 .main-nav a:active {
@@ -140,17 +147,17 @@ footer {
 
 /*      CARD STYLES */
 .card {
-  border: 2px solid #00004d;
-  transition-duration: 0.4s;
+  border: 3px solid hsl(36, 10%, 90%);
 }
 
 .card:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.40);
-  
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 .card:hover h3 {
-  text-shadow: 2px 2px 5px black;
+  background-color: #184C77;
+  color: #E7BB41;
 }
 
 .card h2 {
