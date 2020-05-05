@@ -168,3 +168,11 @@ footer {
   max-width: 480;
   min-width: 270;
 }
+
+a.yt:hover {
+  background-color: #b31217;
+}
+
+a.muse:hover {
+  background-color: #1f74bd;
+}
