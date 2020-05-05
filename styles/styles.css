@@ -27,7 +27,7 @@ header {
   display: inline-flex;
   flex-direction: row;
   background-color: #1a1aff;
-  border-bottom: 2px solid #00004d;
+  border-bottom: 3px solid #00004d;
   align-items: center;
   justify-content: space-between;
   margin: 0;
@@ -40,10 +40,8 @@ header {
 }
 
 main {
-  margin: 2em;
+  margin: 0;
 }
-
-
 
 h1 {
   font-size: 3.5rem; 
@@ -52,10 +50,15 @@ h1 {
 }
 
 h2 {
+  position: sticky;
+  top: 0;
   text-align: center;
   font-size: 2.5rem;
-  margin: 1em;
+  margin: 1em 0;
   padding: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: 3px solid #00004d;
 }
 
 h3 {
@@ -131,6 +134,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 10px;
+  margin: 2em;
 }
 
 /*      CARD STYLES */
