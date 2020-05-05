@@ -7,7 +7,7 @@
 Black: #000000
 White: #ffffff
 Dark Blue: #00004d
-Blue: #1a1aff
+Blue: (226, 53%, 40%)
 
 */
 
@@ -26,7 +26,7 @@ body {
 header {
   display: inline-flex;
   flex-direction: row;
-  background-color: #1a1aff;
+  background-color: hsl(226, 53%, 40%);
   border-bottom: 3px solid #00004d;
   align-items: center;
   justify-content: space-between;
@@ -47,6 +47,7 @@ h1 {
   font-size: 3.5rem; 
   margin: 0 1.5em;
   padding: 0;
+  color: hsl(36, 10%, 90%);
 }
 
 h2 {
@@ -66,7 +67,7 @@ h3 {
   font-size: 2rem;
   margin: 0;
   padding: 0.5em 0;
-  background-color: #0000ff;
+  background-color: hsl(226, 53%, 40%);
   color: white;
 }
 
@@ -87,7 +88,7 @@ footer {
   margin: 0;
   width: 100%;
   color: #ffffff;
-  background-color: #1a1aff;
+  background-color: hsl(226, 53%, 40%);
   border-top: 2px solid #00004d;
   
 }
@@ -106,7 +107,7 @@ footer {
 }
 
 .main-nav a {
-  background-color: #1a1aff;
+  background-color: hsl(226, 53%, 40%);
   border: none;
   color: white;
   padding: 16px 32px;
