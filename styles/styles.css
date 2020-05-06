@@ -6,10 +6,12 @@
 
 Black: #000000
 White: #ffffff
-Prussian Blue: #00004d
+Midnight Blue: #00004d
+Prussian Blue: #113655
 Yale Blue: #184c77
-Platinum: #e8e6e3
+Platinum: #E3E1DD
 Maize (Crayola): #e7bb41
+
 
 */
 
@@ -19,29 +21,67 @@ html {
 
 body {
   font-family: 'Oswald', Helvetica, Arial, sans-serif;
+  line-height: 1.5;
   margin: 0;
   padding: 0;
 }
 
 header {
-  display: inline-flex;
-  flex-direction: row;
   background-color: #113655;
-  border-bottom: 3px solid #E8E6E3;
-  align-items: center;
-  justify-content: space-between;
+  border-bottom: 3px solid #E3E1DD;
+}
+
+.main-nav ul {
   margin: 0;
   padding: 0;
-  width: 100%;
+  text-align: center;
 }
 
-.imakappa-header-logo {
-  max-height: 56px;
+/* NAVIGATION LINKS */
+.main-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-main {
-  margin: 0;
+@media screen and (min-width: 960px) {
+  .main-header .container {
+    justify-content: space-between;
+  }
 }
+
+.main-nav li {
+  display: inline;
+}
+
+.main-nav a {
+  /* display: inline-block; */
+  background-color: #113655;
+  border: none;
+  color: #E8E6E3;
+  padding: .5em 1.5em;
+  /* text-align: center; */
+  text-decoration: none;
+  /* text-transform: uppercase; */
+  font-size: 1.6rem;
+  transition-duration: 0.4s;
+}
+
+.main-nav a:focus {
+  background-color: #184C77;
+}
+
+.main-nav a:hover {
+  background-color: #184C77;
+  color: #E7BB41;
+}
+
+.main-nav a:active {
+  color: #000000;
+}
+
+
 
 h1 {
   font-size: 3.5rem; 
@@ -79,15 +119,9 @@ h3 {
 
 p {
   font-size:  1.6rem;
-  line-height: 1.6;
   margin: 1.5em;
   padding: 0;
   text-align: center;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
 }
 
 footer {
@@ -100,63 +134,36 @@ footer {
   
 }
 
-/* || Utilities */
-
-/*      NAVIGATION LINKS */
-.main-nav {
-  margin: 0;
-  padding: 0;
-}
-
-.main-nav li {
-  list-style-type: none;
-  display: inline-block;
-}
-
-.main-nav a {
-  background-color: #113655;
-  border: none;
-  color: #E8E6E3;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 1.6rem;
-  transition-duration: 0.4s;
-}
-
-.main-nav a:focus {
-  background-color: #184C77;
-}
-
-.main-nav a:hover {
-  background-color: #184C77;
-  color: #E7BB41;
-}
-
-.main-nav a:active {
-  color: #000000;
-}
-
-/*    Container */
+/* || Global Utilities*/
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
-  margin: 2em;
+  width: 960px;
+  max-width: 100%;
+  padding: 0;
+  margin: 0 auto;
 }
 
 @media (max-width: 800px) {
   .container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
+    padding: 20px;
   }
 }
 
-/*      CARD STYLES */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* CARD STYLES */
 .card {
-  border: 3px solid #E8E6E3;
+  border: 3px solid #E3E1DD;
   background-color: #ffffff;
 }
 
