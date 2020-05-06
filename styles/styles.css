@@ -13,14 +13,12 @@ Blue: (226, 53%, 40%)
 
 html {
   font-size: 10px;
-  height: 100%;
 }
 
 body {
   font-family: 'Oswald', Helvetica, Arial, sans-serif;
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
 header {
@@ -106,12 +104,6 @@ footer {
 .main-nav {
   margin: 0;
   padding: 0;
-}
-
-@media (max-width: 800px) {
-  .main-nav{
-
-  }
 }
 
 .main-nav li {
