@@ -173,6 +173,7 @@ footer {
 .card {
   border: 3px solid #E3E1DD;
   background-color: #ffffff;
+  transition-duration: 0.4s;
 }
 
 .card:hover {
