@@ -3,7 +3,7 @@
   >affects card hovers, link colours for hovers
 -fix h2 colours so they look more like headers
 -fix border-bottom colours so they stand out more
-
+-fix footer, cause its overstepping on smaller viewports
 
 */
 
@@ -127,7 +127,7 @@ h3 {
 
 p {
   font-size:  1.6rem;
-  margin: 1.5em;
+  margin: 0;
   padding: 0;
   text-align: center;
 }
