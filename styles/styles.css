@@ -18,9 +18,12 @@ White: #ffffff
 Midnight Blue: #00004d
 Prussian Blue: #113655
 Yale Blue: #184c77
+Honolulu Blue: #1D6EB4
+MuseScore Blue: #1f74bd
 Platinum: #E3E1DD
 Light Platinum: ##E8E6E3
 Maize (Crayola): #e7bb41
+Youtube Red: #b31217
 
 
 */
@@ -229,10 +232,12 @@ a.muse:hover {
 }
 
 .card a.muse:hover {
+  background-color: #1D6EB4;
   color: #E7BB41;
 }
 
 .card a.muse:focus {
+  background-color: #1D6EB4;
   color: #E7BB41;
 }
 
