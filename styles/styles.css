@@ -191,6 +191,10 @@ a.muse:hover {
   background-color: #1f74bd;
 }
 
+.card a:focus {
+  background-color: #E3E1DD;
+}
+
 /* CARD STYLES */
 .card {
   border: 3px solid #E3E1DD;
