@@ -191,12 +191,47 @@ a.muse:hover {
   background-color: #1f74bd;
 }
 
+.card a:hover {
+  background-color: #E3E1DD;
+}
+
 .card a:focus {
   background-color: #E3E1DD;
 }
 
+.card a.yt {
+  text-decoration: none;
+  color: #E8E6E3;
+  font-size: 1.5rem;
+  padding: 0.5em;
+  text-align: center;
+  margin: 0;
+  transition-duration: 0.4s;
+}
+
+.card a.yt:hover {
+  background-color: #b31217;
+}
+
+.card a.muse {
+  background-color: #1f74bd;
+  text-decoration: none;
+  color: #E8E6E3;
+  font-size: 1.5rem;
+  padding: 0.5em;
+  text-align: center;
+  margin-top: auto;
+  transition-duration: 0.4s;
+}
+
+.card a.muse:hover {
+  color: #E7BB41;
+}
+
 /* CARD STYLES */
 .card {
+  display: flex;
+  flex-direction: column;
   border: 3px solid #E3E1DD;
   background-color: #ffffff;
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
