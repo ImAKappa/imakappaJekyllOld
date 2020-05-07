@@ -213,6 +213,10 @@ a.muse:hover {
   background-color: #b31217;
 }
 
+.card a.yt:focus {
+  background-color: #b31217;
+}
+
 .card a.muse {
   background-color: #1f74bd;
   text-decoration: none;
@@ -225,6 +229,10 @@ a.muse:hover {
 }
 
 .card a.muse:hover {
+  color: #E7BB41;
+}
+
+.card a.muse:focus {
   color: #E7BB41;
 }
 
