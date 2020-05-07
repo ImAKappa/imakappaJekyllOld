@@ -3,7 +3,6 @@
   >affects card hovers, link colours for hovers
 -fix h2 colours so they look more like headers
 -fix border-bottom colours so they stand out more
--fix footer, cause its overstepping on smaller viewports
 
 */
 
@@ -20,6 +19,7 @@ Midnight Blue: #00004d
 Prussian Blue: #113655
 Yale Blue: #184c77
 Platinum: #E3E1DD
+Light Platinum: ##E8E6E3
 Maize (Crayola): #e7bb41
 
 
@@ -71,7 +71,7 @@ header {
   background-color: #113655;
   border: none;
   color: #E8E6E3;
-  padding: .5em 1.5em;
+  padding: 1em 1.5em;
   /* text-align: center; */
   text-decoration: none;
   font-size: 1.6rem;
@@ -135,15 +135,18 @@ p {
 
 footer {
   bottom: 0;
-  margin: 0;
+  margin: 2em 0 0 0;
   width: 100%;
   color: #E8E6E3;
   background-color: #113655;
-  border-top: 2px solid #E8E6E3;
+  border-top: 3px solid #E3E1DD;
+  padding-bottom: 1em;
   
 }
 
-/* || Global Utilities*/
+/* || Global Utilities --- */
+
+/* Containers */
 .container {
   width: 960px;
   max-width: 100%;
@@ -170,20 +173,8 @@ footer {
   }
 }
 
-/* CARD STYLES */
-.card {
-  border: 3px solid #E3E1DD;
-  background-color: #ffffff;
-  transition-duration: 0.4s;
-}
-
-.card:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-
-.card:hover h3 {
-  background-color: #184C77;
+/* Links */
+a.active {
   color: #E7BB41;
 }
 
@@ -200,6 +191,20 @@ a.muse:hover {
   background-color: #1f74bd;
 }
 
-.composer {
-  text-align: center;
+/* CARD STYLES */
+.card {
+  border: 3px solid #E3E1DD;
+  background-color: #ffffff;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition-duration: 0.4s;
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover h3 {
+  background-color: #184C77;
+  color: #E7BB41;
 }
