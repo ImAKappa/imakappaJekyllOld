@@ -1,6 +1,22 @@
 Site Organization
 
+
+
+|| Sheet Music HTML ---
+
+
+Links
+  > PDF 
+  ? YouTube
+  ? Audio File
+  ? MuseScore
+
+|| File Tree ---
 Music-Sheets
   >song-name-shortened
     >song-name-shortened.html
     >song-name-full-composer-imakappa-month-year.pdf
+
+
+
+    
