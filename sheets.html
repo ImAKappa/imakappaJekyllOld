@@ -10,26 +10,23 @@
 		<meta name="keywords" content="sheet music, piano, music, score, imakappa, arrangements">
 		<link rel="stylesheet" href="styles/styles.css">
 		<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.js"
+			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+			crossorigin="anonymous">
+		</script>
+		<script> 
+			$(function(){
+				$("#header").load("header.html"); 
+				$("#footer").load("footer.html"); 
+			});
+		</script>
 	</head>
 
 	<body>
-		<header class="main-header">
-			<div class="container">
-				<h1>ImAKappa</h1>
-				<!-- Navigation Links -->
-				<nav class="main-nav">
-					<ul class="main-nav-list">
-						<li><a href="index.html">Home</a></li><!--
-						--><li><a href="about.html">About</a></li><!--
-						--><li><a class="active" href="sheets.html">Sheets</a></li><!--
-						--><li><a class="yt" href="https://www.youtube.com/channel/UC-ij-Y_86B9H1ARnaxnhEtw" target="_blank">YouTube</a></li><!--
-						--><li><a class="muse" href="https://musescore.com/user/28025112" target="_blank">MuseScore</a></li>
-					</ul>
-				</nav>
-			</div>
-		</header>
-
-		
+		<!-- Header -->
+		<div id="header"></div>
 
 		<main>
 			<!-- Short blurb about sheets -->
@@ -38,7 +35,7 @@
 				<p>More sheets coming soon! All sheets are free and available in pdf format down below! </p>
 			</section>
 
-			<!-- Personal ifficulty rating system -->
+			<!-- Personal difficulty rating system -->
 			<!-- <section>
 				<p>My personal difficulty rating scale and what each term means</p>
 				<ul>
@@ -129,8 +126,6 @@
 		<br>
 
 		<!-- Footer -->
-		<footer>
-			<p>ImAKappa 2020 I need to look into copyright licenses</p>
-		</footer>
+		<div id="footer"></div>
 	</body>
 </html>
