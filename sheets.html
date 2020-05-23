@@ -10,23 +10,25 @@
 		<meta name="keywords" content="sheet music, piano, music, score, imakappa, arrangements">
 		<link rel="stylesheet" href="styles/main-styles.css">
 		<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
-
-		<script
-			src="https://code.jquery.com/jquery-3.3.1.js"
-			integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-			crossorigin="anonymous">
-		</script>
-		<script> 
-			$(function(){
-				$("#header").load("header.html"); 
-				$("#footer").load("footer.html"); 
-			});
-		</script>
 	</head>
 
 	<body>
 		<!-- Header -->
-		<div id="header"></div>
+		<header class="main-header">
+			<div class="container">
+				<h1>ImAKappa</h1>
+				<!-- Navigation Links -->
+				<nav class="main-nav">
+					<ul>
+						<li><a href="index.html">Home</a></li><!--
+					--><li><a href="about.html">About</a></li><!--
+					--><li><a class="active" href="sheets.html">Sheets</a></li><!--
+					--><li><a class="yt" href="https://www.youtube.com/channel/UC-ij-Y_86B9H1ARnaxnhEtw" target="_blank">YouTube</a></li><!--
+					--><li><a class="muse" href="https://musescore.com/user/28025112" target="_blank">MuseScore</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
 
 		<main>
 			<!-- Short blurb about sheets -->
@@ -54,34 +56,28 @@
 			<h2>Piano Arrangements</h2>
 			<section class="grid-container">
 				<div class="card">
-					<h3>Giorno Giovanna's Moonlight Sonata</h3>
+					<a class="sheet-link" href="sheet-music/jojo-moonlight/jojo-moonlight.html">Giorno Giovanna's Moonlight Sonata</a>
 					<p class="composer">Yugo Kanno, L.v. Beethoven</p>
-					<p><a href="sheet-music/jojo-moonlight/jojo-moonlight.html">Giorno Giovanna's Moonlight Sonata</a></p>
 				</div>
 				<div class="card">
-					<h3>Bitch Lasagna</h3>
+					<a class="sheet-link" href="sheet-music/bitch-lasagna/bitch-lasagna.html">Bitch Lasagna [PewDiePie & PartyInTheBackyard]</a>
 					<p class="composer">PEWDIEPIE</p>
-					<p><a href="sheet-music/bitch-lasagna/bitch-lasagna.html">Bitch Lasagna [PewDiePie & PartyInTheBackyard]</a></p>
 				</div>
 				<div class="card">
-					<h3>Fried Noodles</h3>
+					<a class="sheet-link" href="sheet-music/fried-noodles/fried-noodles.html">Fried Noodles [Pink Guy]</a>
 					<p class="composer">Pink Guy</p>
-					<p><a href="sheet-music/fried-noodles/fried-noodles.html">Fried Noodles [Pink Guy]</a></p>
 				</div>
 				<div class="card">
-					<h3>London Undergound</h3>
+					<a class="sheet-link" href="sheet-music/london-underground/london-underground.html">London Underground [Amateur Transplants]</a>
 					<p class="composer">Amateur Transplants [Adam Kay & Suman Biswas]</p>
-					<p><a href="sheet-music/london-underground/london-underground.html">London Underground [Amateur Transplants]</a></p>
 				</div>
 				<div class="card">
-					<h3>Bella Ciao</h3>
+					<a class="sheet-link" href="sheet-music/bella-ciao/bella-ciao.html">Bella Ciao [based on version by La Casa de Papal]</a>
 					<p class="composer">La Casa de la Papal & Italian Protest Folk Song</p>
-					<p><a href="sheet-music/bella-ciao/bella-ciao.html">Bella Ciao [based on version by La Casa de Papal]</a></p>
 				</div>
 				<div class="card">
-					<h3>When We Were Young</h3>
+					<a class="sheet-link" href="sheet-music/when-we-were-young/when-we-were-young.html">When We Were Young (Piano Accompaniment) [Adele]</a>
 					<p class="composer">Adele</p>
-					<p><a href="sheet-music/when-we-were-young/when-we-were-young.html">When We Were Young (Piano Accompaniment) [Adele]</a></p>
 				</div>
 			</section>
 
@@ -89,20 +85,20 @@
 			<h2>Original Works</h2>
 			<section class="grid-container">
 				<div class="card">
-					<h3>Libre <a class="yt" href="https://www.youtube.com/watch?v=9hCsnFNtDmA">YT</a></h3>
-					<p><a href="sheet-music/libre/libre.html">Libre</a></p>
+					<a class="sheet-link" href="sheet-music/libre/libre.html">Libre</a>
+					<p></p>
 				</div>
 				<div class="card">
-					<h3>Etude in D Minor</h3>
-					<p><a href="sheet-music/etude-d-minor/etude-d-minor.html">Etude in d minor</a></p>
+					<a class="sheet-link" href="sheet-music/etude-d-minor/etude-d-minor.html">Etude in d minor</a>
+					<p></p>
 				</div>
 				<div class="card">
-					<h3>Twilight Dance</h3>
-					<p><a href="sheet-music/twilight-dance/twilight-dance.html">Twilight Dance</a></p>
+					<a class="sheet-link" href="sheet-music/twilight-dance/twilight-dance.html">Twilight Dance</a>
+					<p></p>
 				</div>
 				<div class="card">
-					<h3>untitled-nostalgia.mp3</h3>
-					<p><a href="sheet-music/untitled-nostalgia-mp3/untitled-nostalgia-mp3.html">untitled_nostalgia.mp3</a></p>
+					<a class="sheet-link" href="sheet-music/untitled-nostalgia-mp3/untitled-nostalgia-mp3.html">untitled_nostalgia.mp3</a>
+					<p></p>
 				</div>
 			</section>
 		</main>
@@ -110,6 +106,8 @@
 		<br>
 
 		<!-- Footer -->
-		<div id="footer"></div>
+		<footer>
+			<p>ImAKappa 2020</p>
+		</footer>
 	</body>
 </html>
