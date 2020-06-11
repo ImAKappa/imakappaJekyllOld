@@ -95,6 +95,25 @@ h1:hover {
   color: #E7BB41;
 }
 
+.logo {
+  max-width: 80px;
+  max-height: auto;
+  /* position: absolute; */
+  position: fixed;
+}
+
+@media screen and (max-width: 760px) {
+  .logo {
+    display: block;
+    max-width: 100px;
+    max-height: auto;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    
+  }
+}
+
 h2 {
   position: sticky;
   top: 0;
@@ -194,7 +213,7 @@ a.muse:hover, a.muse:focus {
   transition-duration: 0.4s;
 }
 
-.card:hover, {
+.card:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
