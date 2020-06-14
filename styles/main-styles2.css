@@ -1,0 +1,156 @@
+/* Style sheet for redesign 3 */
+
+/* BASE */
+
+html {
+  font-size: 10px;
+  height: 100%;
+}
+
+body {
+  font-family: tahoma, arial, sans-serif;
+  line-height: 1.6em;
+  background-image: url('../images/imakappa-channel-logo-2020-ver3.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  background-color: black;
+  color: white;
+  
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+/* a {
+  text-decoration: none;
+  background-color: blue;
+  color: white;
+  padding: 4px;
+} */
+
+/* .main-nav a {
+  text-decoration: none;
+  color: black;
+  background-color: lightslategray;
+  border: 1px solid black;
+}
+
+.main-nav a:hover {
+  color: green;
+  background: black;
+}
+
+.social-links a {
+  background-color: black;
+  color: white;
+  padding: 16px;
+}
+
+
+.main-nav ul {
+  padding: 0;
+  list-style: none;
+  border: 1px dashed red;
+}
+
+.main-nav li {
+  border: 1px dotted blue;
+  display: inline;
+  margin: 0;
+} */
+
+/* BANNER STUFF */
+
+.banner {
+  display: flex;
+  height: 300px;
+}
+
+.banner-textbox {
+  background-color: black;
+  padding: 20px;
+  width: 30%;
+  margin: auto;
+}
+
+.banner-text {
+  color: white;
+  text-align: center;
+  font-size: 3rem;
+}
+
+/* UPDATES */
+.updates {
+  display: flex;
+  background-color: #f4f4f4;
+}
+
+.site-update {
+  flex: 1;
+  margin: 20px;
+}
+
+.content-update {
+  flex: 2;
+  margin: 20px;
+}
+
+/* NAVIGATION */
+.navigation {
+  background-color: dimgray;
+  margin: 0;
+}
+
+/* SOCIAL */
+.social {
+  display: flex;
+  background-color: #f4f4f4;
+  height: 150px;
+  
+}
+
+/* FOOTER */
+footer {
+  height: 128px;
+}
+
+
+/* ---------- */
+/* ASSETS */
+.container {
+  width: 80%;
+  display: grid;
+  margin: auto;
+}
+
+.grid-3 {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+}
+
+.card {
+  display: flex;
+  font-size: 1.7rem;
+  padding: 20px;
+  border: 1px solid lightgrey;
+  margin: 20px;
+}
