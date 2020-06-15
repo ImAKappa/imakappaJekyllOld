@@ -1,7 +1,6 @@
 /* Style sheet for redesign 3 */
 
 /* BASE */
-
 html {
   font-size: 10px;
   height: 100%;
@@ -10,16 +9,13 @@ html {
 body {
   font-family: 'Oswald', tahoma, arial, sans-serif;
   line-height: 1.6em;
-  
+  background-image: url('../images/imakappa-channel-logo-2020.svg');
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 35em;
   height: 100%;
   margin: 0;
-}
-
-header {
-  display: flex;
-  background-color: black;
-  color: white;
-  
 }
 
 h1 {
@@ -34,12 +30,16 @@ p {
   font-size: 1.6rem;
 }
 
-/* a {
+a {
   text-decoration: none;
-  background-color: blue;
-  color: white;
-  padding: 4px;
-} */
+  color: black;
+  font-size: 1.6rem;
+  border: 2px dashed black;
+}
+
+li {
+  font-size: 1.6rem;
+}
 
 /* .main-nav a {
   text-decoration: none;
@@ -76,59 +76,77 @@ p {
 
 .banner {
   display: flex;
-  height: 50vh;
-  background-image: url('../images/imakappa-channel-logo-2020-ver3.png');
-  background-position: center center;
+  height: 35em;
+  /* background-image: url('../images/imakappa-channel-logo-2020.svg');
+  background-position: top center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: contain;
+  background-size: 35em; */
 }
 
 .banner-textbox {
   border: 5px solid black;
   padding: 20px;
-  width: 30%;
+  width: 40%;
   margin: auto;
 }
 
 .banner-text {
-  color: white;
+  color: black;
   text-align: center;
-  font-size: 3rem;
+  font-size: 5rem;
 }
 
 /* NAVIGATION */
 .navigation {
-  background-color: dimgray;
   margin: 0;
 }
 
 /* UPDATES */
 .updates {
   display: flex;
-  background-color: #f4f4f4;
+  background-color: none;
+  margin-top: 8em;
 }
 
 .site-update {
   flex: 1;
   margin: 20px;
+  border: 5px solid black;
 }
 
 .content-update {
   flex: 2;
   margin: 20px;
+  border: 5px solid black;
 }
 
 /* SOCIAL */
 .social {
   display: flex;
-  background-color: dimgray;
+  flex-direction: column;
   height: 150px;
+  border: 5px solid black;
+  margin: 8em;
+  justify-content: center;
+  text-align: center;
+}
+
+.social ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social li {
+  display: inline;
 }
 
 /* FOOTER */
 footer {
   height: 128px;
+  text-align: center;
+  margin: 35em 0 15em;
 }
 
 
@@ -161,22 +179,18 @@ footer {
   margin: 20px;
   justify-content: center;
   align-items: center;
-  /* border: 1px solid lightgrey; */
-  background-color: white;
   text-align: center;
-  border-bottom: 3px solid black;
+  border: 5px solid black;
   transition-duration: 0.4s;
 }
 
 .card:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-  border-bottom: 3px solid blue;
-  color: grey;
 }
 
 .card img {
-  width: 100%;
+  width: 30%;
   height: auto;
 }
 
