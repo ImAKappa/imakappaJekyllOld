@@ -24,6 +24,11 @@ h2 {
   margin: 1em;
 }
 
+h3 {
+  font-size: 2.4rem;
+  margin: 1em;
+}
+
 p {
   font-size: 1.7rem;
   margin: 1em;
@@ -202,7 +207,7 @@ a.active {
 }
 
 /* SOCIAL */
-.social {
+.turtle-facts {
   display: flex;
   flex-direction: column;
   height: 150px;
@@ -217,46 +222,10 @@ a.active {
   background-color: #f4f4f4;
 }
 
-.social ul{
-  list-style: none;
-  margin: 2.5em 0;
-  padding: 0;
-}
-
-.social li {
-  display: inline;
-  margin: 1em;
-  
-}
-
 .social a {
   border: 3px solid black;
   font-size: 2.2rem;
   padding: 10px;
-}
-
-a.yt {
-  border: 3px solid rgb(180, 0, 0);
-  background-color: rgb(242, 0, 0);
-  color: white;
-}
-
-a.yt:hover {
-  border: 3px solid red;
-  background-color: rgb(180, 0, 0);
-  color: black;
-}
-
-a.muse {
-  border: 3px solid rgb(0, 0, 146);
-  background-color: blue;
-  color: white;
-}
-
-a.muse:hover {
-  border: 3px solid blue;
-  background-color: rgb(0, 0, 146);
-  color: black;
 }
 
 /* ABOUT */
@@ -304,8 +273,8 @@ footer {
 
 /* ---------- */
 /* ASSETS */
-.container {
-  width: 80%;
+.narrow-container {
+  width: 20%;
   display: grid;
   margin: auto;
 }
