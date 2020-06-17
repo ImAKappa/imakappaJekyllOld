@@ -16,6 +16,7 @@ body {
 
 h1 {
   font-size: 4rem;
+  margin: 0.5em;
 }
 
 h2 {
@@ -30,75 +31,131 @@ p {
 
 a {
   text-decoration: none;
-  color: black;
-  font-size: 1.6rem;
-  border: 3px solid blue;
   transition-duration: 0.4s;
-  padding: 4px;
 }
 
-a:hover {
+a.sheet-link {
   border: 3px solid rgb(0, 0, 146);
-  background-color: blue;
+  background-color: rgb(2, 2, 222);
   color: white;
+  padding: 4px;
+  font-size: 1.6rem;
+  
+}
+
+a.sheet-link:hover {
+  background-color: blue;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
 li {
   font-size: 1.6rem;
 }
 
-/* .main-nav a {
+/* NAV BAR */
+header {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em;
+}
+
+.drop-down {
+  display: none;
+  background-color: #f4f4f4;
+  width: 100%;
+  text-align: center;
+}
+
+/* RESPONSIVE NAV */
+@media screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .main-nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .main-nav a {
+    display: block;
+    text-align: center;
+  }
+}
+
+.main-nav a {
   text-decoration: none;
   color: black;
-  background-color: lightslategray;
-  border: 1px solid black;
+  border: 3px solid black;
+  padding: 8px 16px;
+  margin: 0.25em;
 }
 
 .main-nav a:hover {
-  color: green;
-  background: black;
-}
-
-.social-links a {
-  background-color: black;
+  border: 3px solid black;
+  background-color: rgb(30, 30, 30);
   color: white;
-  padding: 16px;
 }
-
 
 .main-nav ul {
   padding: 0;
   list-style: none;
-  border: 1px dashed red;
+  /* border: 1px dashed red; */
 }
 
 .main-nav li {
-  border: 1px dotted blue;
+  /* border: 1px dotted blue; */
   display: inline;
   margin: 0;
-} */
+}
+
+a.active {
+  background-color: rgb(20, 20, 20);
+  color: #e7bb41;
+}
 
 /* BANNER STUFF */
 
 .banner {
   display: flex;
-  height: 35em;
+  height: 40em;
   background-image: url('../images/imakappa-channel-logo-2020.svg');
-  background-position: top center;
+  background-position: center 8em;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 35em;
 }
 
 .banner-textbox {
-  border: 5px solid black;
+  border: none;
   padding: 20px;
   width: 40%;
   margin: auto;
 }
 
 .banner-text {
-  color: black;
   text-align: center;
   font-size: 5rem;
 }
@@ -107,7 +164,7 @@ li {
 .navigation {
   margin: 0;
   background-image: url('../images/blue-imakappa-channel-logo-2020.svg');
-  background-position: top center;
+  background-position: center 8em;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 35em;
@@ -120,7 +177,7 @@ li {
   display: flex;
   background-color: none;
   background-image: url('../images/imakappa-channel-logo-2020.svg');
-  background-position: top center;
+  background-position: center 8em;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 35em;
@@ -152,7 +209,7 @@ li {
   justify-content: center;
   text-align: center;
   background-image: url('../images/blue-imakappa-channel-logo-2020.svg');
-  background-position: top center;
+  background-position: center 8em;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 35em;
@@ -178,37 +235,67 @@ li {
   padding: 10px;
 }
 
-.social a.yt {
+a.yt {
   border: 3px solid rgb(180, 0, 0);
-  background-color: red;
+  background-color: rgb(242, 0, 0);
   color: white;
 }
 
-.social a.yt:hover {
+a.yt:hover {
   border: 3px solid red;
   background-color: rgb(180, 0, 0);
   color: black;
 }
 
-.social a.muse {
+a.muse {
   border: 3px solid rgb(0, 0, 146);
   background-color: blue;
   color: white;
 }
 
-.social a.muse:hover {
+a.muse:hover {
   border: 3px solid blue;
   background-color: rgb(0, 0, 146);
   color: black;
 }
 
+/* ABOUT */
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../images/blue-imakappa-channel-logo-2020.svg');
+  background-position: center 8em;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 35em;
+  background-color: #f4f4f4;
+  padding: 10em 0;
+}
+
+.about-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../images/imakappa-channel-logo-2020.svg');
+  background-position: center 8em;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 35em;
+  padding: 10em 0;
+}
+
 /* FOOTER */
 footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   height: 128px;
   text-align: center;
   padding: 35em 0 15em;
   background-image: url('../images/imakappa-channel-logo-2020.svg');
-  background-position: top center;
+  background-position: center 8em;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 35em;
@@ -245,7 +332,6 @@ footer {
   justify-content: center;
   align-items: center;
   text-align: center;
-  
   transition-duration: 0.4s;
 }
 
@@ -271,10 +357,19 @@ footer {
 }
 
 .card a.card-link:hover {
+  
   background-color: rgb(20, 20, 20);
   color: white;
 }
 
 .card p {
   margin: 10px;
+}
+
+.hidden-text-f4 {
+  color: #f4f4f4;
+}
+
+.hidden-text-fff {
+  color: white;
 }
