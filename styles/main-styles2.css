@@ -141,6 +141,30 @@ a.active {
   color: #e7bb41;
 }
 
+a.yt {
+  border: 3px solid rgb(180, 0, 0);
+  background-color: rgb(242, 0, 0);
+  color: white;
+}
+
+a.yt:hover {
+  border: 3px solid red;
+  background-color: rgb(180, 0, 0);
+  color: black;
+}
+
+a.muse {
+  border: 3px solid rgb(0, 0, 146);
+  background-color: blue;
+  color: white;
+}
+
+a.muse:hover {
+  border: 3px solid blue;
+  background-color: rgb(0, 0, 146);
+  color: black;
+}
+
 /* BANNER STUFF */
 
 .banner {
@@ -154,7 +178,7 @@ a.active {
 }
 
 .banner-textbox {
-  border: none;
+  border: 5px solid black;
   padding: 20px;
   width: 40%;
   margin: auto;
@@ -227,6 +251,8 @@ a.active {
   font-size: 2.2rem;
   padding: 10px;
 }
+
+
 
 /* ABOUT */
 
