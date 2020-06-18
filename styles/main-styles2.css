@@ -80,10 +80,10 @@ header {
 }
 
 .menu-icon {
-  display: flex;
   flex-direction: column;
   padding: 0.5em;
   align-items: center;
+  display: none;
 }
 
 .menu-icon > div {
@@ -108,13 +108,8 @@ header {
     border: 3px solid black;
   }
 
-  .main-nav p {
-    display: inline-block;
-    text-align: center;
-    width: 100%;
-    margin: 0;
-    padding: 0.25em 0;
-
+  .main-nav .menu-icon {
+    display: flex;
   }
 
   .main-nav ul {
