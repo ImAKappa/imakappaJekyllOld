@@ -14,6 +14,7 @@ body {
   margin: 0;
 }
 
+
 h1 {
   font-size: 4rem;
   margin: 0.5em;
@@ -230,6 +231,12 @@ a.muse:hover {
   text-align: center;
 }
 
+@media screen and (max-width: 800px) {
+  .updates {
+    flex-direction: column;
+  }
+}
+
 /* SOCIAL */
 .turtle-facts {
   display: flex;
@@ -300,9 +307,19 @@ footer {
 /* ---------- */
 /* ASSETS */
 .narrow-container {
-  width: 20%;
-  display: grid;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  transition-duration: 0.4s;
+}
+
+.narrow-container:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-width: 800px) {
+  .narrow-container {
+    margin: 1.5em;
+  }
 }
 
 .grid-3 {
