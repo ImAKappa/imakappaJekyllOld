@@ -383,6 +383,15 @@ footer {
   position: fixed;
   top: 5em;
   right: 1em;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .switch-mode {
+    position: absolute;
+    top: 1.5em;
+  }
 }
 
 .narrow-container {
