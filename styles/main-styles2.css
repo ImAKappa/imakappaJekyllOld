@@ -50,16 +50,15 @@ a {
 }
 
 a.sheet-link {
-  border: 3px solid rgb(0, 0, 146);
-  background-color: rgb(2, 2, 222);
+  border: 3px solid rgb(0, 88, 0);
+  background-color: green;
   color: white;
   padding: 4px;
 }
 
 a.sheet-link:hover {
-  background-color: white;
-  color: black;
-  border: 3px solid rgb(2, 2, 222);
+  border: 3px solid green;
+  background-color: rgb(0, 88, 0);
 }
 
 li {
@@ -184,7 +183,6 @@ a.yt {
 a.yt:hover {
   border: 3px solid red;
   background-color: rgb(180, 0, 0);
-  color: black;
 }
 
 a.muse {
@@ -196,7 +194,6 @@ a.muse {
 a.muse:hover {
   border: 3px solid blue;
   background-color: rgb(0, 0, 146);
-  color: black;
 }
 
 /* BANNER STUFF */
