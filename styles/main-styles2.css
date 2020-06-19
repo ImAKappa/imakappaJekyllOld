@@ -80,6 +80,14 @@ header {
   border-bottom: 2px solid #f4f4f4;
 }
 
+.title {
+  color: black;
+}
+
+.title:hover {
+  color: green;
+}
+
 @media screen and (max-width: 800px) {
   header {
     position: relative;
@@ -364,6 +372,16 @@ footer {
 
 /* ---------- */
 /* ASSETS */
+.switch-mode {
+  padding: 16px;
+  background-color: rgb(211, 211, 211);
+  color: black;
+  border: none;
+  position: fixed;
+  top: 5em;
+  right: 1em;
+}
+
 .narrow-container {
   display: flex;
   border: 5px solid black;

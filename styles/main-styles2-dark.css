@@ -375,6 +375,16 @@ footer {
 
 /* ---------- */
 /* ASSETS */
+.switch-mode {
+  padding: 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  position: fixed;
+  top: 5em;
+  right: 1em;
+}
+
 .narrow-container {
   display: flex;
   border: 5px solid black;
