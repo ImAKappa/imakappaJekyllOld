@@ -456,8 +456,8 @@ footer {
 }
 
 .card a.card-link:hover {
-  background-color: rgb(20, 20, 20);
-  color: white;
+  background-color: rgb(255, 255, 255);
+  color: green;
 }
 
 .card h3 {
