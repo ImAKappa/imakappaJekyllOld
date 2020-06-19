@@ -9,7 +9,6 @@ html {
 body {
   font-family: 'Oswald', tahoma, arial, sans-serif;
   line-height: 2em;
-  
   height: 100%;
   margin: 0;
 }
@@ -386,12 +385,12 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
-  .grid-3 {
+  /* .grid-3 {
     grid-template-columns: 1fr 1fr;
-  }
+  } */
 }
 
-@media screen and (max-width: 480) {
+@media screen and (max-width: 480px) {
   .grid-3 {
     grid-template-columns: 1fr;
   }
@@ -415,9 +414,7 @@ footer {
 }
 
 .card img {
-  width: 25%;
-  height: auto;
-  align-items: flex-end;
+  max-width: 25%;
 }
 
 .card a.card-link {
