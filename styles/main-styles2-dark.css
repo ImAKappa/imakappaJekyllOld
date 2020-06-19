@@ -330,7 +330,7 @@ a.muse:hover {
   flex-direction: column;
   align-items: center;
   background-image: url('../images/blue-imakappa-channel-logo-2020.svg');
-  background-position: center 12em;
+  background-position: center 8em;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 35em;
@@ -343,11 +343,21 @@ a.muse:hover {
   flex-direction: column;
   align-items: center;
   background-image: url('../images/imakappa-channel-logo-2020.svg');
-  background-position: center 12em;
+  background-position: center 8em;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 35em;
   padding: 10em 0;
+}
+
+@media screen and (max-width: 800px) {
+  .about-text {
+    background-position: center 12em;
+  }
+
+  .about-image {
+    background-position: center 12em;
+  }
 }
 
 /* FOOTER */
