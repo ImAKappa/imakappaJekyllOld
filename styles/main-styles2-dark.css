@@ -455,10 +455,10 @@ footer {
   margin: 10px;
 }
 
-.hidden-text-f4 {
-  color: #f4f4f4;
+.hidden-text-light {
+  color: rgb(34, 34, 34);
 }
 
-.hidden-text-fff {
-  color: white;
+.hidden-text-dark {
+  color: rgb(22, 22, 22);
 }
