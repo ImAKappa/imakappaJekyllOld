@@ -17,13 +17,19 @@ main {
   margin-top: 4.5em;
 }
 
+@media screen and (max-width: 480px) {
+  main {
+    margin-top: 0;
+  }
+}
+
 h1 {
-  font-size: 4rem;
+  font-size: 3.4rem;
   margin: 0.5em;
 }
 
 h2 {
-  font-size: 3rem;
+  font-size: 2.8rem;
   margin: 1em;
 }
 
@@ -33,11 +39,12 @@ h3 {
 }
 
 p {
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   margin: 1em;
 }
 
 a {
+  font-size: 1.6rem;
   text-decoration: none;
   transition-duration: 0.4s;
 }
@@ -47,8 +54,6 @@ a.sheet-link {
   background-color: rgb(2, 2, 222);
   color: white;
   padding: 4px;
-  font-size: 1.6rem;
-  
 }
 
 a.sheet-link:hover {
@@ -226,7 +231,7 @@ a.muse:hover {
 
 .banner-text {
   text-align: center;
-  font-size: 5rem;
+  font-size: 3.4rem;
 }
 
 /* NAVIGATION */
@@ -399,7 +404,7 @@ footer {
 .card {
   display: flex;
   flex-direction: column;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
   padding: 0;
   margin: 20px;
   justify-content: center;
@@ -422,8 +427,6 @@ footer {
   color: black;
   margin: 0;
   padding: 1.5m 0;
-  font-size: 1.8rem;
-  width: 100%;
   height: 100%;
 }
 
