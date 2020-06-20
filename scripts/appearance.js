@@ -1,16 +1,14 @@
-// Switch between Light and Dark mode
 
-const btn = document.querySelector('.switch-mode');
+const toggleSwitch = document.querySelector('.switcheroo input[type="checkbox"]');
 
-const stylesheetDark = document.styleSheets[0];
-const stylesheetLight = document.styleSheets[1];
-
-btn.onclick = function() {
-  if (stylesheetDark.disabled === false) {
-    stylesheetDark.disabled = true;
-    stylesheetLight.disabled = false;
-  } else if (stylesheetLight.disabled === false) {
-    stylesheetLight.disabled = true;
-    stylesheetDark.disabled = false;
-  }
+function switchTheme(e) {
+    if (e.target.checked) {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+    else {
+        document.documentElement.setAttribute('data-theme', 'light');
+    }    
 }
+
+toggleSwitch.addEventListener('change', switchTheme, false);
+
