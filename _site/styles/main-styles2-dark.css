@@ -1,0 +1,494 @@
+/* Style sheet for redesign 3 */
+
+/* BASE */
+html {
+  font-size: 10px;
+  height: 100%;
+}
+
+body {
+  font-family: 'Oswald', tahoma, arial, sans-serif;
+  line-height: 2em;
+  height: 100%;
+  margin: 0;
+  background-color: rgb(22, 22, 22);
+  color: white;
+}
+
+main {
+  margin-top: 4.5em;
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    margin-top: 0;
+  }
+}
+
+h1 {
+  font-size: 3.4rem;
+  margin: 0.5em;
+}
+
+h2 {
+  font-size: 2.8rem;
+  margin: 1em;
+}
+
+h3 {
+  font-size: 2.4rem;
+  margin: 1em;
+}
+
+p {
+  font-size: 1.6rem;
+  margin: 1em;
+}
+
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+a.sheet-link {
+  border: 3px solid rgb(0, 88, 0);
+  background-color: green;
+  color: white;
+  padding: 4px;
+}
+
+a.sheet-link:hover {
+  border: 3px solid green;
+  background-color: rgb(0, 88, 0);
+}
+
+li {
+  font-size: 1.6rem;
+}
+
+/* NAV BAR */
+header {
+  background: transparent;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border-bottom: 3px solid rgb(0, 0, 0);
+  background-color: rgb(34, 34, 34);
+}
+
+.title {
+  color: white;
+}
+
+.title:hover {
+  color: green;
+}
+
+@media screen and (max-width: 800px) {
+  header {
+    position: relative;
+    top: 1em;
+    border-bottom: 1px solid black;
+  }
+}
+
+.main-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5em;
+}
+
+.menu-icon {
+  flex-direction: column;
+  padding: 0.5em;
+  align-items: center;
+  display: none;
+}
+
+.menu-icon > div {
+  width: 35px;
+  height: 5px;
+  background-color: white;
+  margin: 2px 0;
+}
+
+/* RESPONSIVE NAV */
+@media screen and (max-width: 800px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: inline-block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 3px solid black;
+    background-color: rgb(34, 34, 34);
+  }
+
+  .main-nav .menu-icon {
+    display: flex;
+  }
+
+  .main-nav ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+
+  .main-nav:hover .nav-links {
+    display: block;
+  }
+
+  .main-nav a {
+    display: block;
+    text-align: center;
+  }
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: white;
+  border: 3px solid black;
+  padding: 8px 16px;
+  margin: 0.25em;
+}
+
+.main-nav a:hover {
+  border: 3px solid white;
+  background-color: rgb(22, 22, 22);
+  color: white;
+}
+
+.main-nav ul {
+  padding: 0;
+  list-style: none;
+}
+
+.main-nav li {
+  display: inline;
+  margin: 0;
+}
+
+a.active {
+  background-color: rgb(20, 20, 20);
+  color: #e7bb41;
+}
+
+a.yt {
+  border: 3px solid rgb(180, 0, 0);
+  background-color: rgb(242, 0, 0);
+  color: white;
+}
+
+a.yt:hover {
+  border: 3px solid red;
+  background-color: rgb(180, 0, 0);
+}
+
+a.muse {
+  border: 3px solid rgb(0, 0, 146);
+  background-color: blue;
+  color: white;
+}
+
+a.muse:hover {
+  border: 3px solid blue;
+  background-color: rgb(0, 0, 146);
+}
+
+/* BANNER STUFF */
+
+.banner {
+  display: flex;
+  height: 40em;
+  background-image: url('../images/imakappa-channel-logo-2020.svg');
+  background-position: center 8em;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 35em;
+}
+
+.banner-textbox {
+  display: flex;
+  border: 5px solid black;
+  padding: 2em 8em;
+  margin: auto;
+  /* background-color: rgba(170, 170, 170, 0.2); */
+}
+
+@media screen and (max-width: 800px) {
+  .banner {
+    background-position: center 12em;
+  }
+
+  .banner-textbox {
+    padding: 2em;
+  }
+}
+
+.banner-text {
+  text-align: center;
+  font-size: 3.4rem;
+}
+
+/* NAVIGATION */
+.navigation {
+  margin: 0;
+  background-image: url('../images/blue-imakappa-channel-logo-2020.svg');
+  background-position: center 8em;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 35em;
+  padding-top: 8em;
+  background-color: rgb(34, 34, 34);
+}
+
+@media screen and (max-width: 800px) {
+  .navigation {
+    background-position: center 12em;
+  }
+}
+
+/* UPDATES */
+.updates {
+  display: flex;
+  background-image: url('../images/imakappa-channel-logo-2020.svg');
+  background-position: center 8em;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 35em;
+  padding: 8em 0 16em;
+}
+
+.site-update {
+  flex: 1;
+  margin: 20px;
+  border: 5px solid black;
+  /* background-color: rgba(170, 170, 170, 0.2); */
+}
+
+.update-list li {
+  margin-bottom: 1em;
+}
+
+.content-update {
+  flex: 2;
+  margin: 20px;
+  border: 5px solid black;
+  text-align: center;
+  /* background-color: rgba(170, 170, 170, 0.2); */
+}
+
+@media screen and (max-width: 960px) {
+  .updates {
+    flex-direction: column;
+    background-position: center 12em;
+  }
+
+  .site-update {
+    text-align: center;
+  }
+}
+
+/* TURTLE FACTS */
+.turtle-facts {
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: center;
+  text-align: center;
+  background-image: url('../images/blue-imakappa-channel-logo-2020.svg');
+  background-position: center 8em;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 35em;
+  padding: 16em 0 16em;
+  background-color: rgb(34, 34, 34);
+}
+
+@media screen and (max-width: 800px) {
+  .turtle-facts {
+    background-position: center 12em;
+  }
+}
+
+/* ABOUT */
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../images/blue-imakappa-channel-logo-2020.svg');
+  background-position: center 8em;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 35em;
+  background-color: rgb(34, 34, 34);
+  padding: 10em 0;
+}
+
+.about-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url('../images/imakappa-channel-logo-2020.svg');
+  background-position: center 8em;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 35em;
+  padding: 10em 0;
+}
+
+@media screen and (max-width: 800px) {
+  .about-text {
+    background-position: center 12em;
+  }
+
+  .about-image {
+    background-position: center 12em;
+  }
+}
+
+/* FOOTER */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 128px;
+  text-align: center;
+  padding: 35em 0 15em;
+  background-image: url('../images/imakappa-channel-logo-2020.svg');
+  background-position: center 8em;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 35em;
+}
+
+@media screen and (max-width: 800px) {
+  footer {
+    background-position: center 12em;
+    align-items: flex-start;
+  }
+}
+
+
+/* ---------- */
+/* ASSETS */
+.switch-mode {
+  padding: 16px;
+  background-color: black;
+  color: white;
+  border: none;
+  position: fixed;
+  top: 5em;
+  right: 1em;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 800px) {
+  .switch-mode {
+    position: absolute;
+    top: 1.5em;
+  }
+}
+
+.narrow-container {
+  display: flex;
+  border: 5px solid black;
+  flex-direction: column;
+  transition-duration: 0.4s;
+  background-color: rgb(255, 255, 255, 0.2);
+  margin: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .narrow-container {
+    margin: 1.5em;
+  }
+}
+
+.grid-3 {
+  display: grid;
+  width: 80%;
+  margin: auto;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 800px) {
+  /* .grid-3 {
+    grid-template-columns: 1fr 1fr;
+  } */
+}
+
+@media screen and (max-width: 480px) {
+  .grid-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.6rem;
+  padding: 0;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition-duration: 0.4s;
+}
+
+.card:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.card img {
+  max-width: 25%;
+}
+
+.card a.card-link {
+  border: 5px solid black;
+  background-color: rgb(255, 255, 255, 0.2);
+  color: white;
+  margin: 0;
+  padding: 1.5m 0;
+  height: 100%;
+}
+
+.card a.card-link:hover {
+  background-color: rgb(20, 20, 20);
+  border: 5px solid white;
+  color: green;
+}
+
+.card h3 {
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  margin: 0;
+  padding: 0.5em;
+}
+
+.card p {
+  margin: 10px;
+}
+
+.hidden-text-light {
+  color: rgb(34, 34, 34);
+}
+
+.hidden-text-dark {
+  color: rgb(22, 22, 22);
+}
