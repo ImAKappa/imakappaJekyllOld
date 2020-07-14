@@ -30,6 +30,14 @@ permalink: /sheets/
     </ul>
   </section> -->
 
+  <ul>
+    {% for post in site.categories.sheets %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+
   <!-- Where all the downloadable sheets for arrangements are displayed and linked -->
   <h2>Piano Arrangements</h2>
   <section class="grid-container">
