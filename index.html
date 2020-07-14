@@ -19,21 +19,21 @@ permalink: /
   <div class="grid-3">
     <div class="card">
       <a class="card-link sheets-card" href="sheets.html">
-        <img src="images/treble-clef-clker-free-vector-images-pixabay.svg" alt="An image/icon to do with sheets">
+        <img src="assets/images/treble-clef-clker-free-vector-images-pixabay.svg" alt="An image/icon to do with sheets">
         <h3>Sheets</h3>
         <p>I have arrangements of some popular songs, and sheets of my own compositions. They are also free.</p>
       </a>
     </div>
     <div class="card">
       <a class="card-link read-sheets-card" href="howtoreadsheets.html">
-        <img src="images/treble-clef-clker-free-vector-images-pixabay.svg" alt="An image/icon to do with reading sheet music">
+        <img src="assets/images/treble-clef-clker-free-vector-images-pixabay.svg" alt="An image/icon to do with reading sheet music">
         <h3>How to Read Sheet Music</h3>
         <p>Exactly, what it sounds like. Interactive too!</p>
       </a>
     </div>
     <div class="card third-card">
       <a class="card-link" href="#">
-        <img src="images/treble-clef-clker-free-vector-images-pixabay.svg" alt="An image/icon to do with art">
+        <img src="assets/images/treble-clef-clker-free-vector-images-pixabay.svg" alt="An image/icon to do with art">
         <h3>Some Link</h3>
         <p>Goes back to the top of the page.</p>
       </a>
@@ -57,6 +57,13 @@ permalink: /
     <p>From time to time I'll post sheet music updates</p>
     <p>I might add my art too. Maybe some simple javascript games. I dunno.</p>
   </div>
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
 </section>
 
 <section class="turtle-facts">
