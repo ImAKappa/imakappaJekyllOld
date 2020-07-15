@@ -1,10 +1,11 @@
 --- 
 layout: sheets-layout
-title: "Libre"
-date: 2018-10-04
+title: "London Underground"
+date: 2019-09-05
 categories: arrangements
 permalink: ":categories/:year/:month/:day/:title"
-pdf-link: libre.pdf
-yt-link: https://www.youtube.com/watch?v=9hCsnFNtDmA
-muse-link: https://musescore.com/user/28025112/scores/5257696
+pdf-link: london-underground-adam-kay.pdf
+pdf-lyric: london-underground-adam-kay-lyrics.pdf
+yt-link: #
+muse-link: https://musescore.com/user/28025112/scores/5700761
 ---
