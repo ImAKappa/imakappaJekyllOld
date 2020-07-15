@@ -2,7 +2,7 @@
 layout: sheets-layout
 title: "Drifting On Solar Waves"
 date: 2020-06-13
-categories: orginal-works
+categories: original-works
 permalink: ":categories/:year/:month/:day/:title"
 pdf-link: Coming Soon
 pdf-lyric: #
