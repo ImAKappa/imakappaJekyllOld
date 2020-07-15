@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ page.title }}</title>
-</head>
-  <header>
-    <a href="/sheets/">Back to Sheets</a>
-  </header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ImAKappa | Sheets | {{ page.title }}</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+  </head>
   <body>
+    <header>
+      <a href="/sheets/">Back to Sheets</a>
+    </header>
     <div class="card">
-      <p><a class="pdf-download" href="{{ page.dir }}" target="_blank">{{page.title}} Sheet Music PDF 🡣</a></p>
+      <p><a class="pdf-download" href="/./assets/sheet-pdfs/{{ page.pdf-link }}" target="_blank">{{page.title}} Sheet Music PDF 🡣</a></p>
       <p><a class="yt" href="{{ page.yt-link }}" target="_blank">Watch on YouTube</a></p>
       <p><a class="muse" href="{{ page.muse-link }}" target="_blank">Listen at Musescore</a></p>
     </div>
+    {{ content }}
+    {% include footer.html %}
   </body>
 </html>
