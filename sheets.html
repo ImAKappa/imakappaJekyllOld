@@ -15,80 +15,11 @@ permalink: /sheets/
     <p>More sheets coming soon! All sheets are free and available in pdf format down below! </p>
   </section>
 
-  <!-- Personal difficulty rating system -->
-  <!-- <section>
-    <p>My personal difficulty rating scale and what each term means</p>
-    <ul>
-      <li>n00b</li>
-      <li>easy</li>
-      <li>medium</li>
-      <li>intermediate</li>
-      <li>hard</li>
-      <li>advanced</li>
-      <li>insane</li>
-      <li>God-tier</li>
-    </ul>
-  </section> -->
-
-  <ul>
+  <section class="grid-container">
     {% for post in site.categories.sheet-posts %}
-      <li>
+      <div class="card"></div>
         <a href="{{ post.url }}">{{ post.title }}</a>
-      </li>
+      </div>
     {% endfor %}
-  </ul>
-
-  <!-- Where all the downloadable sheets for arrangements are displayed and linked -->
-  <h2>Piano Arrangements</h2>
-  <section class="grid-container">
-    <div class="card">
-      <a class="sheet-link" href="sheet-music/jojo-moonlight/jojo-moonlight.html">Giorno Giovanna's Moonlight Sonata</a>
-      <p class="composer">Yugo Kanno, L.v. Beethoven</p>
-      <img class="card-image" src="sheet-music/jojo-moonlight/mike-petrucci-uIf6H1or1nE-unsplash.jpg">
-      <p><a class="yt" href="https://www.youtube.com/watch?v=L64m5zj2iBs" target="_blank">Watch it on YouTube</a></p>
-    </div>
-    <div class="card">
-      <a class="sheet-link" href="sheet-music/bitch-lasagna/bitch-lasagna.html">Bitch Lasagna</a>
-      <p class="composer">PewDiePie & PartyInTheBackyard</p>
-      <img class="card-image" src="sheet-music/bitch-lasagna/pewdiepie-wavy-wallpaper.jpg">
-    </div>
-    <div class="card">
-      <a class="sheet-link" href="sheet-music/fried-noodles/fried-noodles.html">Fried Noodles</a>
-      <p class="composer">Pink Guy</p>
-      <img class="card-image" src="sheet-music/fried-noodles/pink-guy-fried-noodles.jpg">
-    </div>
-    <div class="card">
-      <a class="sheet-link" href="sheet-music/london-underground/london-underground.html">London Underground</a>
-      <p class="composer">Amateur Transplants [Adam Kay & Suman Biswas]</p>
-    </div>
-    <div class="card">
-      <a class="sheet-link" href="sheet-music/bella-ciao/bella-ciao.html">Bella Ciao</a>
-      <p class="composer">La Casa de la Papal & Italian Protest Folk Song</p>
-    </div>
-    <div class="card">
-      <a class="sheet-link" href="sheet-music/when-we-were-young/when-we-were-young.html">When We Were Young (Accompaniment)</a>
-      <p class="composer">Adele</p>
-    </div>
-  </section>
-
-  <!-- Where all the downloadable sheets for original compositions are displayed and linked -->
-  <h2>Original Works</h2>
-  <section class="grid-container">
-    <div class="card">
-      <a class="sheet-link" href="sheet-music/libre/libre.html">Libre</a>
-      <p></p>
-    </div>
-    <div class="card">
-      <a class="sheet-link" href="sheet-music/etude-d-minor/etude-d-minor.html">Etude in d minor</a>
-      <p></p>
-    </div>
-    <div class="card">
-      <a class="sheet-link" href="sheet-music/twilight-dance/twilight-dance.html">Twilight Dance</a>
-      <p></p>
-    </div>
-    <div class="card">
-      <a class="sheet-link" href="sheet-music/untitled-nostalgia-mp3/untitled-nostalgia-mp3.html">untitled_nostalgia.mp3</a>
-      <p></p>
-    </div>
   </section>
 </main>
