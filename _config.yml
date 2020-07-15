@@ -36,10 +36,13 @@ plugins:
 defaults:
   - 
     scope:
-      path: ""
+      path: "sheet-posts"
       type: "posts"
     values:
-      layout: "post"
+      layout: "sheets-layout"
+      pdf-lyric: "#"
+      yt-link: "#"
+      muse-link: "#"
 
 # Exclude from processing.
 # The following items will not be processed, by default.

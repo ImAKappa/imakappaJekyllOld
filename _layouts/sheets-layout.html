@@ -12,7 +12,11 @@
     </header>
     <div class="card">
       <p><a class="pdf-download" href="/./assets/sheet-pdfs/{{ page.pdf-link }}" target="_blank">{{page.title}} Sheet Music PDF 🡣</a></p>
+      {% unless page.yt-link == "#" %}
       <p><a class="yt" href="{{ page.yt-link }}" target="_blank">Watch on YouTube</a></p>
+      {% endunless %}
+      
+      
       <p><a class="muse" href="{{ page.muse-link }}" target="_blank">Listen at Musescore</a></p>
     </div>
     {{ content }}
