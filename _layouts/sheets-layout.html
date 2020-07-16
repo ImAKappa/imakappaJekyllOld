@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ImAKappa | Sheets | {{ page.title }}</title>
     <link rel="stylesheet" href="/./assets/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
+    <script src="/./assets/scripts/appearance.js" defer></script>
   </head>
   <body>
     <header>
       <a href="/sheets/">Back to Sheets</a>
     </header>
+    <div class="switcheroo">
+      <input type="checkbox" class="switch-mode">
+    </div>
     <div class="card">
       <p><a class="sheet-link" href="/./assets/sheet-pdfs/{{ page.pdf-link }}" target="_blank">{{page.title}} Sheet Music PDF 🡣</a></p>
       {% unless page.pdf-lyric == "#" %}
