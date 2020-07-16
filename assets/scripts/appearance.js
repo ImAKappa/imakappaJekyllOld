@@ -5,7 +5,7 @@ Code courtesy of Ananya Neogi
 Source: https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8
 */
 
-const toggleSwitch = document.querySelector('.switcheroo input[type="checkbox"]');
+let toggleSwitch = document.querySelector('.switcheroo input[type="checkbox"]');
 
 function switchTheme(e) {
   if (e.target.checked) {

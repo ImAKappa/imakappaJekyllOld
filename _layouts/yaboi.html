@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="../assets/css/styles.css">
-    <script src="../assets/scripts/appearance.js"></script>
+    <script src="../assets/scripts/appearance.js" defer></script>
   </head>
   <body>
     {% include header.html %}
+    <div class="switcheroo">
+      <input type="checkbox" class="switch-mode">
+    </div>
     {{ content }}
     {% include footer.html%}
   </body>
