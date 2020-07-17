@@ -232,7 +232,7 @@ a.muse:hover {
 
 .banner {
   display: flex;
-  height: 40em;
+  height: 75vh;
   background-image: url('../images/imakappa-channel-logo-2020.svg');
   background-position: center 8em;
   background-repeat: no-repeat;
@@ -453,7 +453,7 @@ input[type="checkbox"] {
   display: grid;
   width: 80%;
   margin: auto;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 @media screen and (max-width: 800px) {
