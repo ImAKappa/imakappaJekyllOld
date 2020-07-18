@@ -10,6 +10,7 @@
   --check-border-color: grey;
   --main-text-color: black;
   --backimg-size: 47vh;
+  --backimg-v-pos: 10em;
 }
 
 [data-theme="dark"] {
@@ -230,28 +231,17 @@ a.muse:hover {
   display: flex;
   height: 65vh;
   background-image: url('../images/imakappa-channel-logo-2020.svg');
-  background-position: center 8em;
+  background-position: center var(--backimg-v-pos);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 35em;
   background-size: var(--backimg-size);
 }
 
 .banner-textbox {
   display: flex;
   border: 5px solid black;
-  padding: 2em 8em;
-  margin: auto;
-}
-
-@media screen and (max-width: 800px) {
-  .banner {
-    background-position: center 12em;
-  }
-
-  .banner-textbox {
-    padding: 2em;
-  }
+  padding: 2vh 18vw;
+  margin: auto auto;
 }
 
 .banner-text {
@@ -263,7 +253,7 @@ a.muse:hover {
 .navigation {
   margin: 0;
   background-image: url('../images/blue-imakappa-channel-logo-2020.svg');
-  background-position: center 8em;
+  background-position: center var(--backimg-v-pos);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: var(--backimg-size);
@@ -271,17 +261,11 @@ a.muse:hover {
   background-color: var(--secondary-bg-color);
 }
 
-@media screen and (max-width: 800px) {
-  .navigation {
-    background-position: center 12em;
-  }
-}
-
 /* UPDATES */
 .updates {
   display: flex;
   background-image: url('../images/imakappa-channel-logo-2020.svg');
-  background-position: center 8em;
+  background-position: center var(--backimg-v-pos);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: var(--backimg-size);
@@ -310,7 +294,6 @@ a.muse:hover {
 @media screen and (max-width: 960px) {
   .updates {
     flex-direction: column;
-    background-position: center 12em;
   }
 
   .site-update {
@@ -326,7 +309,7 @@ a.muse:hover {
   justify-content: center;
   text-align: center;
   background-image: url('../images/blue-imakappa-channel-logo-2020.svg');
-  background-position: center 8em;
+  background-position: center var(--backimg-v-pos);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: var(--backimg-size);
@@ -334,11 +317,6 @@ a.muse:hover {
   background-color: var(--secondary-bg-color);
 }
 
-@media screen and (max-width: 800px) {
-  .turtle-facts {
-    background-position: center 12em;
-  }
-}
 
 /* ABOUT */
 
@@ -347,7 +325,7 @@ a.muse:hover {
   flex-direction: column;
   align-items: center;
   background-image: url('../images/blue-imakappa-channel-logo-2020.svg');
-  background-position: center 8em;
+  background-position: center var(--backimg-v-pos);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: var(--backimg-size);
@@ -360,21 +338,11 @@ a.muse:hover {
   flex-direction: column;
   align-items: center;
   background-image: url('../images/imakappa-channel-logo-2020.svg');
-  background-position: center 8em;
+  background-position: center var(--backimg-v-pos);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: var(--backimg-size);
   padding: 10em 0;
-}
-
-@media screen and (max-width: 800px) {
-  .about-text {
-    background-position: center 12em;
-  }
-
-  .about-image {
-    background-position: center 12em;
-  }
 }
 
 /* FOOTER */
@@ -386,7 +354,7 @@ footer {
   text-align: center;
   padding: 35em 0 15em;
   background-image: url('../images/imakappa-channel-logo-2020.svg');
-  background-position: center 8em;
+  background-position: center var(--backimg-v-pos);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: var(--backimg-size);
@@ -394,7 +362,6 @@ footer {
 
 @media screen and (max-width: 800px) {
   footer {
-    background-position: center 12em;
     align-items: flex-start;
   }
 }
