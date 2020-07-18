@@ -32,9 +32,17 @@ if (currentTheme) {
 }
 
 // Dropdown Nav for Mobile
-let dropdown = document.querySelector('.drop-down');
+let dropdown = document.querySelector('.drop-btn');
 let dropContent = document.querySelector('.nav-links');
 
 dropdown.onclick = function() {
   dropContent.classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (event.target != dropdown) {
+    if (dropContent.classList.contains('show')) {
+      dropContent.classList.remove('show');
+    }
+  }
 }
