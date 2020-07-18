@@ -30,3 +30,11 @@ if (currentTheme) {
         toggleSwitch.checked = true;
     }
 }
+
+// Dropdown Nav for Mobile
+let dropdown = document.querySelector('.drop-down');
+let dropContent = document.querySelector('.nav-links');
+
+dropdown.onclick = function() {
+  dropContent.classList.toggle("show");
+}
