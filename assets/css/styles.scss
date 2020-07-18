@@ -9,7 +9,7 @@
   --secondary-bg-color: #f4f4f4;
   --check-border-color: grey;
   --main-text-color: black;
-
+  --backimg-size: 47vh;
 }
 
 [data-theme="dark"] {
@@ -228,13 +228,13 @@ a.muse:hover {
 
 .banner {
   display: flex;
-  height: 40em;
+  height: 65vh;
   background-image: url('../images/imakappa-channel-logo-2020.svg');
   background-position: center 8em;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 35em;
-  display: none;
+  background-size: var(--backimg-size);
 }
 
 .banner-textbox {
@@ -266,7 +266,7 @@ a.muse:hover {
   background-position: center 8em;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 35em;
+  background-size: var(--backimg-size);
   padding-top: 8em;
   background-color: var(--secondary-bg-color);
 }
@@ -284,7 +284,7 @@ a.muse:hover {
   background-position: center 8em;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 35em;
+  background-size: var(--backimg-size);
   padding: 8em 0 16em;
 }
 
@@ -329,7 +329,7 @@ a.muse:hover {
   background-position: center 8em;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 35em;
+  background-size: var(--backimg-size);
   padding: 16em 0 16em;
   background-color: var(--secondary-bg-color);
 }
@@ -350,7 +350,7 @@ a.muse:hover {
   background-position: center 8em;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 35em;
+  background-size: var(--backimg-size);
   background-color: var(--secondary-bg-color);
   padding: 10em 0;
 }
@@ -363,7 +363,7 @@ a.muse:hover {
   background-position: center 8em;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 35em;
+  background-size: var(--backimg-size);
   padding: 10em 0;
 }
 
@@ -389,7 +389,7 @@ footer {
   background-position: center 8em;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: 35em;
+  background-size: var(--backimg-size);
 }
 
 @media screen and (max-width: 800px) {
@@ -423,13 +423,6 @@ input[type="checkbox"] {
   height: 0;
   width: 0;
 }
-
-// @media screen and (max-width: 800px) {
-//   .switcheroo {
-//     position: absolute;
-//     top: 7.25em;
-//   }
-// }
 
 .narrow-container {
   display: flex;
