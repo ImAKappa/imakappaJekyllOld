@@ -24,10 +24,16 @@ description: >- # this means to ignore newlines until "baseurl:"
   ImAKappa's website. Free sheet music for piano.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://imakappa.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  imakappa
 twitter:
   username: imakappa1
   card: summary
+social:
+  name: Alex Kappen
+  links:
+    - https://twitter.com/imakappa1
+    - https://www.youtube.com/channel/UC-ij-Y_86B9H1ARnaxnhEtw
+    - https://github.com/ImAKappa
+lang: en_US
 
 # Build settings
 markdown: kramdown
