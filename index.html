@@ -4,64 +4,35 @@ title: "ImAKappa | Home"
 permalink: /
 ---
 
-<section class="banner">
-  <div class="banner-textbox">
-    <p class="banner-text">Welcome</p>
+<section class="updates">
+  <h2>Updates</h2>
+  <ul class="update-list">
+    {% for post in site.categories.updates limit:3 %}
+    <li>{{ post.date }} - <a href="{{ post.url }}">{{ post.title}}</a></li>
+    {% endfor %}
+  </ul>
+  <div class="card">
+    <a class="card-link sheets-card" href="/updates/">
+      <h3>Click here for more -></h3>
+    </a>
   </div>
 </section>
 
-<section class="navigation">
-  <div class="grid-3">
-    <div class="card">
-      <a class="card-link sheets-card" href="sheets.html">
-        <img src="assets/images/treble-clef-clker-free-vector-images-pixabay.svg" alt="An image/icon to do with sheets">
-        <h3>Sheets</h3>
-        <p>I have arrangements of some popular songs, and sheets of my own compositions. They are also free.</p>
-      </a>
+<section class="sheet-preview">
+  <h2>Sheet Music</h2>
+  {% for post in site.categories.sheet-posts limit:3 %}
+    <div class="latest-score">
+      <a class="sheet-link" href="{{ post.url }}">{{ post.title }}</a>
     </div>
-    <div class="card">
-      <a class="card-link read-sheets-card" href="howtoreadsheets.html">
-        <img src="assets/images/treble-clef-clker-free-vector-images-pixabay.svg" alt="An image/icon to do with reading sheet music">
-        <h3>How to Read Sheet Music</h3>
-        <p>Exactly, what it sounds like. Interactive too!</p>
-      </a>
-    </div>
-    <div class="card third-card">
-      <a class="card-link" href="#">
-        <img src="assets/images/treble-clef-clker-free-vector-images-pixabay.svg" alt="An image/icon to do with art">
-        <h3>Some Link</h3>
-        <p>Goes back to the top of the page.</p>
-      </a>
-    </div>
+  {% endfor %}
+  <div class="card">
+    <a class="card-link sheets-card" href="/sheets/">
+      <h3>Click here for more -></h3>
+    </a>
   </div>
 </section>
 
 <!-- Updates Section for news on new sheets or other information -->
-<section class="updates">
-  <div class="site-update">
-    <h2>Updates</h2>
-    <ul class="update-list">
-      <li class="latest-score">Latest score | <a class="sheet-link" href="sheet-music/fried-noodles/fried-noodles.html">Fried Noodles [Pink Guy]</a></li>
-      <li class="notes">Notes: 19 June 2020 - Site structure changed slightly.</li>
-      <li class="notes">Notes: 19 June 2020 - Dark mode added (default). No cookies implemented to allow preferred mode to persist.</li>
-    </ul>
-  </div>
-  <div class="content-update">
-    <h2>Latest Things</h2>
-    <p>As you might have noticed, this site is currently under construction.</p>
-    <p>From time to time I'll post sheet music updates</p>
-    <p>I might add my art too. Maybe some simple javascript games. I dunno.</p>
-  </div>
-</section>
 
-<section class="turtle-facts">
-  <h2>Turtle Facts</h2>
-  <div class="narrow-container">
-    <p>Turtles are one of the best animals</p>
-    <p>Their shells develop from their rib cage</p>
-    <p>The largest turtles are Leather Back sea turtles. They can reach up to 2m and can weigh up to 2000lbs</p>
-    <p>The smallest turtle is the Speckled Padloper turtle, about 8cm long and no more than 140g. They are found in South Africa.</p>
-  </div>
-  <h3>More turtle facts to come!</h3>
-</section>
+
 

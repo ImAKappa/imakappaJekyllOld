@@ -1,0 +1,14 @@
+--- 
+layout: yaboi
+title: "ImAKappa | Home"
+permalink: /updates/
+---
+
+<section class="updates">
+  <h2>Updates</h2>
+  <ul>
+    {% for post in site.categories.updates %}
+    <li>{{ post.date }} - <a href="{{ post.url }}">{{ post.title}}</a></li>
+    {% endfor %}
+  </ul>
+</section>

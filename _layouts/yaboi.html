@@ -4,13 +4,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="/./assets/css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
-    <script src="../assets/scripts/appearance.js" defer></script>
+    <script src="/./assets/scripts/appearance.js" defer></script>
   </head>
   <body>
     {% include header.html %}
+    <main>
     {{ content }}
+    </main>
     {% include footer.html%}
   </body>
 </html>
