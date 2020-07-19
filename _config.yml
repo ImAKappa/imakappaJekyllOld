@@ -33,6 +33,8 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-coffeescript
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 defaults:
   - 
