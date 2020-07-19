@@ -1,5 +1,4 @@
 --- 
-layout: sheets-layout
 title: "Fried Noodles"
 date: 2020-05-09
 categories: arrangements
