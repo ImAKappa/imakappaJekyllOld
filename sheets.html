@@ -4,18 +4,17 @@ title: "ImAKappa | Sheets"
 permalink: /sheets/
 ---
 
-<main>
-  <!-- Short blurb about sheets -->
-  <section>
-    <h2>Sheets</h2>
-    <p>More sheets coming soon! All sheets are free and available in pdf format down below! </p>
-  </section>
 
-  <section class="grid-container grid-3">
-    {% for post in site.categories.sheet-posts %}
-      <div class="card">
-        <a class="sheet-link" href="{{ post.url }}">{{ post.title }}</a>
-      </div>
-    {% endfor %}
-  </section>
-</main>
+<!-- Short blurb about sheets -->
+<section>
+  <h2>Sheets</h2>
+  <p>More sheets coming soon! All sheets are free and available in pdf format down below! </p>
+</section>
+
+<section class="grid-container grid-3">
+  {% for post in site.categories.sheet-posts %}
+    <div class="card">
+      <a class="sheet-link" href="{{ post.url }}">{{ post.title }}</a>
+    </div>
+  {% endfor %}
+</section>

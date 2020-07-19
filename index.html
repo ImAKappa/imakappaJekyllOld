@@ -20,6 +20,7 @@ permalink: /
 
 <section class="sheet-preview">
   <h2>Sheet Music</h2>
+  <p>Latest sheets:</p>
   {% for post in site.categories.sheet-posts limit:3 %}
     <div class="latest-score">
       <a class="sheet-link" href="{{ post.url }}">{{ post.title }}</a>

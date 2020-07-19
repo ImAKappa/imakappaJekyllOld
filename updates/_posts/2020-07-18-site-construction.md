@@ -1,5 +1,5 @@
 ---
-layout: yaboi
+layout: update-layout
 title: "Site Construction"
 date: 2020-07-12 17:14:02 -0400
 categories: updates
