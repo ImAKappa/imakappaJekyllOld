@@ -11,6 +11,8 @@
   --main-text-color: black;
   --backimg-size: 47vh;
   --backimg-v-pos: 10em;
+  --button-color-bg: rgb(4, 4, 233);
+  --button-color-border: rgb(0, 0, 168);
 }
 
 [data-theme="dark"] {
@@ -391,6 +393,16 @@ input[type="checkbox"] {
   .narrow-container {
     margin: 1.5em;
   }
+}
+
+a.button {
+  background-color: var(--button-color-bg);
+  color: white;
+  border: 3px solid var(--button-color-border);
+  text-align: center;
+  margin: auto;
+  padding: 4px;
+  font-size: 1.6rem;
 }
 
 .grid-3 {

@@ -11,26 +11,18 @@ permalink: /
     <li>{{ post.date }} - <a href="{{ post.url }}">{{ post.title}}</a></li>
     {% endfor %}
   </ul>
-  <div class="card">
-    <a class="card-link sheets-card" href="/updates/">
-      <h3>Click here for more -></h3>
-    </a>
-  </div>
+  <a class="button" href="/updates/">More updates -></a>
 </section>
 
 <section class="sheet-preview">
   <h2>Sheet Music</h2>
   <p>Latest sheets:</p>
-  {% for post in site.categories.sheet-posts limit:3 %}
+  {% for post in site.categories.sheet-music limit:3 %}
     <div class="latest-score">
       <a class="sheet-link" href="{{ post.url }}">{{ post.title }}</a>
     </div>
   {% endfor %}
-  <div class="card">
-    <a class="card-link sheets-card" href="/sheets/">
-      <h3>Click here for more -></h3>
-    </a>
-  </div>
+  <a class="button" href="/sheets/">More sheets -></a>
 </section>
 
 <!-- Updates Section for news on new sheets or other information -->
