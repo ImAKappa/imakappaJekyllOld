@@ -62,7 +62,7 @@ defaults:
       type: "posts"
     values:
       layout: "update-layout"
-      permalink: ":year/title"
+      permalink: ":categories/:year/title"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
