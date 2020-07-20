@@ -3,7 +3,6 @@ layout: sheets-layout
 title: "Bitch Lasagna"
 date: 2020-01-28
 categories: arrangements
-permalink: ":categories/:year/:month/:day/:title"
 pdf-link: bitch-lasagna.pdf
 pdf-lyric: bitch-lasgna-lyrics.pdf
 yt-link: "#"

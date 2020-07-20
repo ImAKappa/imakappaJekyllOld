@@ -21,7 +21,7 @@
 title: ImAKappa 
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  ImAKappa's website. Free sheet music for piano.
+  Website of ImAKappa. Free sheet music for piano.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://imakappa.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 logo: /./assets/images/imakappa-channel-logo-2020.png
@@ -48,13 +48,21 @@ plugins:
 defaults:
   - 
     scope:
-      path: "sheet-posts"
+      path: "sheet-music"
       type: "posts"
     values:
       layout: "sheets-layout"
+      permalink: ":categories/:title"
       pdf-lyric: "#"
       yt-link: "#"
       muse-link: "#"
+  - 
+    scope:
+      path: "updates"
+      type: "posts"
+    values:
+      layout: "update-layout"
+      permalink: ":year/title"
 
 # Exclude from processing.
 # The following items will not be processed, by default.
