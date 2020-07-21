@@ -324,7 +324,7 @@ a.btn-muse:hover {
 /* UNIQUE ASSETS */
 
 a.active {
-  background-color: rgb(20, 20, 20);
+  background-color: (var(--main-border-color));
   color: #e7bb41;
 }
 
