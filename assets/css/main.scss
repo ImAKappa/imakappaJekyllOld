@@ -13,15 +13,12 @@
   --main-bg-color: white;
   --secondary-bg-color: #f4f4f4;
   --main-text-color: black;
-
   --main-border-color: grey;
-
   --accent-color-1-bg: rgb(4, 4, 233);
   --accent-color-1-border: rgb(0, 0, 168);
   --accent-color-2-bg: green;
   --accent-color-2-border: rgb(0, 88, 0);
   
-
   /* Numbers */
   --backimg-size: 47vh;
   --backimg-v-pos: 10em;
@@ -31,8 +28,8 @@
   /* Dark Theme */
   --main-bg-color: rgb(22, 22, 22);
   --secondary-bg-color: rgb(34, 34, 34);
-  --main-border-color: black;
   --main-text-color: white;
+  --main-border-color: black;
 }
 
 /* BASE*/
@@ -51,7 +48,7 @@ body {
 }
 
 main {
-  margin-top: 8em;
+  margin-top: 8em; /* So content isn't hidden under header */
 }
 
 section {
@@ -60,6 +57,22 @@ section {
   margin: 0;
   height: 48vh;
   padding: 2em 0;
+}
+
+.logo-bg-green {
+  background-image: url('../images/imakappa-channel-logo-2020.svg');
+  background-position: center var(--backimg-v-pos);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: var(--backimg-size);
+}
+
+.logo-bg-blue {
+  background-image: url('../images/blue-imakappa-channel-logo-2020.svg');
+  background-position: center var(--backimg-v-pos);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: var(--backimg-size);
 }
 
 h1 {
@@ -96,19 +109,16 @@ li {
 
 /* NAV BAR */
 header {
-  background: transparent;
-  margin: 0;
-  padding: 0;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   position: fixed;
   top: 0;
   width: 100%;
-  border-bottom: 3px solid rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
   background-color: var(--secondary-bg-color);
-  flex-direction: column;
-  align-items: center;
   border: none;
 }
 
@@ -141,19 +151,15 @@ header {
 }
 
 .main-nav a:hover {
-  border: 3px solid var(--main-text-color);
-  background-color: rgb(22, 22, 22);
+  border: 3px solid var(--secondary-bg-color);
+  background-color: var(--main-border-color);
   color: white;
 }
 
-.nav-links {
-  padding: 0;
-  list-style: none;
-
-  display: flex;
-  flex-direction: column;
+.nav-links-list {
   width: 100%;
   height: 100%;
+  padding: 0;
   display: none;
 }
 
@@ -162,45 +168,29 @@ header {
   margin: 0;
 }
 
-a.active {
-  background-color: rgb(20, 20, 20);
-  color: #e7bb41;
-}
-
-
-
 /* BANNER STUFF */
 
-.banner {
-  display: flex;
-  height: 65vh;
-  background-image: url('../images/imakappa-channel-logo-2020.svg');
-  background-position: center var(--backimg-v-pos);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: var(--backimg-size);
-}
+// .banner {
+//   display: flex;
+//   height: 65vh;
+//   
+// }
 
-.banner-textbox {
-  display: flex;
-  border: 5px solid black;
-  padding: 2vh 18vw;
-  margin: auto auto;
-}
+// .banner-textbox {
+//   display: flex;
+//   border: 5px solid black;
+//   padding: 2vh 18vw;
+//   margin: auto auto;
+// }
 
-.banner-text {
-  text-align: center;
-  font-size: 3.4rem;
-}
+// .banner-text {
+//   text-align: center;
+//   font-size: 3.4rem;
+// }
 
 /* SHEET PREVIEW SECTION */
 .sheet-preview {
   margin: 0;
-  background-image: url('../images/blue-imakappa-channel-logo-2020.svg');
-  background-position: center var(--backimg-v-pos);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: var(--backimg-size);
   // padding-top: 8em;
   background-color: var(--secondary-bg-color);
 }
@@ -212,11 +202,6 @@ a.active {
 /* UPDATES */
 .updates {
   display: flex;
-  background-image: url('../images/imakappa-channel-logo-2020.svg');
-  background-position: center var(--backimg-v-pos);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: var(--backimg-size);
 }
 
 .update-list li {
@@ -240,11 +225,6 @@ a.active {
 //   height: 150px;
 //   justify-content: center;
 //   text-align: center;
-//   background-image: url('../images/blue-imakappa-channel-logo-2020.svg');
-//   background-position: center var(--backimg-v-pos);
-//   background-repeat: no-repeat;
-//   background-attachment: fixed;
-//   background-size: var(--backimg-size);
 //   padding: 16em 0 16em;
 //   background-color: var(--secondary-bg-color);
 // }
@@ -256,11 +236,6 @@ a.active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('../images/blue-imakappa-channel-logo-2020.svg');
-  background-position: center var(--backimg-v-pos);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: var(--backimg-size);
   background-color: var(--secondary-bg-color);
   padding: 10em 0;
 }
@@ -269,11 +244,6 @@ a.active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url('../images/imakappa-channel-logo-2020.svg');
-  background-position: center var(--backimg-v-pos);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: var(--backimg-size);
   padding: 10em 0;
 }
 
@@ -285,11 +255,6 @@ footer {
   height: 20vh;
   text-align: center;
   padding: 65vh 0 20vh;
-  background-image: url('../images/imakappa-channel-logo-2020.svg');
-  background-position: center var(--backimg-v-pos);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: var(--backimg-size);
 }
 
 
@@ -389,6 +354,11 @@ a.btn-muse:hover {
 }
 
 /* UNIQUE ASSETS */
+
+a.active {
+  background-color: rgb(20, 20, 20);
+  color: #e7bb41;
+}
 
 input[type="checkbox"] {
   width: 16px;

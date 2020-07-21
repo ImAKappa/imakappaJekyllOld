@@ -33,7 +33,7 @@ if (currentTheme) {
 
 // Dropdown Nav for Mobile
 let dropdown = document.querySelector('.drop-btn');
-let dropContent = document.querySelector('.nav-links');
+let dropContent = document.querySelector('.nav-links-list');
 
 dropdown.onclick = function() {
   dropContent.classList.toggle("show");
