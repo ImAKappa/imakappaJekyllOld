@@ -4,26 +4,30 @@ title: "ImAKappa | Home"
 permalink: /
 ---
 
-<section class="updates logo-bg-green">
-  <h2>Updates</h2>
-  <ul class="update-list">
-    {% for post in site.categories.updates limit:3 %}
-    <li>{{ post.date }} - <a href="{{ post.url }}">{{ post.title}}</a></li>
-    {% endfor %}
-  </ul>
-  <a class="btn btn-info" href="/updates/">More updates -></a>
-</section>
+<main>
+  <section class="updates logo-bg-green">
+    <h2>Updates</h2>
+    <ul class="update-list">
+      {% for post in site.categories.updates limit:3 %}
+      <li>{{ post.date }} - <a href="{{ post.url }}">{{ post.title}}</a></li>
+      {% endfor %}
+    </ul>
+    <a class="btn btn-info" href="/updates/">More updates -></a>
+  </section>
 
-<section class="sheet-preview logo-bg-blue">
-  <h2>Sheet Music</h2>
-  <p>Latest sheets:</p>
-  {% for post in site.categories.sheet-music limit:3 %}
-    <div class="latest-score">
-      <a class="btn btn-sheet-link" href="{{ post.url }}">{{ post.title }}</a>
-    </div>
-  {% endfor %}
-  <a class="btn btn-info" href="/sheets/">More sheets -></a>
-</section>
+  <section class="sheet-preview logo-bg-blue secondary-bg-color">
+    <h2>Sheet Music</h2>
+    <p>Latest sheets:</p>
+    {% for post in site.categories.sheet-music limit:3 %}
+      <div class="latest-score">
+        <a class="btn btn-sheet-link" href="{{ post.url }}">{{ post.title }}</a>
+      </div>
+    {% endfor %}
+    <a class="btn btn-info" href="/sheets/">More sheets -></a>
+  </section>
+</main>
+
+{% include footer.html%}
 
 <!-- Updates Section for news on new sheets or other information -->
 

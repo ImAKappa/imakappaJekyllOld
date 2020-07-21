@@ -18,6 +18,8 @@
   --accent-color-1-border: rgb(0, 0, 168);
   --accent-color-2-bg: green;
   --accent-color-2-border: rgb(0, 88, 0);
+  --accent-color-3-bg: orange;
+  --accent-color-3-border: rgb(206, 134, 0);
   
   /* Numbers */
   --backimg-size: 47vh;
@@ -57,6 +59,14 @@ section {
   margin: 0;
   height: 48vh;
   padding: 2em 0;
+}
+
+section.main-bg-color {
+  background-color: var(--main-bg-color);
+}
+
+section.secondary-bg-color {
+  background-color: var(--secondary-bg-color);
 }
 
 .logo-bg-green {
@@ -150,7 +160,8 @@ header {
   color: var(--main-text-color);
 }
 
-.main-nav a:hover {
+.main-nav a:hover,
+.main-nav a:active {
   border: 3px solid var(--secondary-bg-color);
   background-color: var(--main-border-color);
   color: white;
@@ -189,63 +200,14 @@ header {
 // }
 
 /* SHEET PREVIEW SECTION */
-.sheet-preview {
-  margin: 0;
-  // padding-top: 8em;
-  background-color: var(--secondary-bg-color);
-}
-
 .latest-score {
   margin: auto;
 }
 
 /* UPDATES */
-.updates {
-  display: flex;
-}
-
-.update-list li {
-  margin-bottom: 1em;
-}
-
-@media screen and (max-width: 960px) {
-  .updates {
-    flex-direction: column;
-  }
-
-  .site-update {
-    text-align: center;
-  }
-}
-
-/* TURTLE FACTS */
-// .turtle-facts {
-//   display: flex;
-//   flex-direction: column;
-//   height: 150px;
-//   justify-content: center;
-//   text-align: center;
-//   padding: 16em 0 16em;
-//   background-color: var(--secondary-bg-color);
-// }
-
 
 /* ABOUT */
 
-.about-text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--secondary-bg-color);
-  padding: 10em 0;
-}
-
-.about-image {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10em 0;
-}
 
 /* FOOTER */
 footer {
@@ -329,6 +291,12 @@ a.btn-sheet-link {
 a.btn-sheet-link:active {
   border: 3px solid var(--accent-color-2-bg);
   background-color: var(--accent-color-2-border);
+}
+
+a.btn-return {
+  border: 3px solid var(--accent-color-3-border);
+  background-color: var(--accent-color-3-bg);
+  margin: 0;
 }
 
 a.btn-yt {
@@ -416,10 +384,10 @@ input[type="checkbox"] {
   pointer-events: none;
 }
 
-.hidden-text-light {
+.hidden-text-secondary {
   color: var(--secondary-bg-color);
 }
 
-.hidden-text-dark {
+.hidden-text-main {
   color: var(--main-bg-color);
 }
