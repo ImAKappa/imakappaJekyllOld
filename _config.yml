@@ -19,9 +19,10 @@
 # in the templates via {{ site.myvariable }}.
 
 title: ImAKappa 
+tagline: Free sheet music. Intermediate piano arrangements, mostly of memes
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Website of ImAKappa. Free sheet music for piano.
+  Website of ImAKappa. Free sheet music for piano. Mostly meme music, but I have some original piano pieces you might like.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://imakappa.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 logo: /./assets/images/imakappa-channel-logo-2020.png
@@ -29,7 +30,7 @@ twitter:
   username: imakappa1
   card: summary
 social:
-  name: Alex Kappen
+  name: ImAKappa
   links:
     - https://twitter.com/imakappa1
     - https://www.youtube.com/channel/UC-ij-Y_86B9H1ARnaxnhEtw
