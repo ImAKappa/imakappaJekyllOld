@@ -54,6 +54,7 @@ defaults:
     values:
       layout: "sheets-layout"
       permalink: ":categories/:title"
+      composer: "ImAKappa"
       pdf-lyric: "#"
       yt-link: "#"
       muse-link: "#"

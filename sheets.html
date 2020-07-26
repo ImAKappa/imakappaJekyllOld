@@ -8,10 +8,11 @@ permalink: /sheets/
 <!-- Short blurb about sheets -->
 <main>
   <h2>Sheets</h2>
-  <section class="grid-container grid-3">
+  <section class="container grid-3">
     {% for post in site.categories.sheet-music %}
       <div class="card">
         <a class="btn btn-sheet-link" href="{{ post.url }}">{{ post.title }}</a>
+        <p class="composer">{{ post.composer }}</p>
       </div>
     {% endfor %}
   </section>
