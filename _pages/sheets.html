@@ -11,7 +11,8 @@ permalink: /sheets/
   <section class="container grid-3">
     {% for post in site.categories.sheet-music %}
       <div class="card">
-        <img class="thumbnail" src="../assets/images/{{ post.thumbnail }}" alt="">
+        {% include lazyload.html %}
+        <!-- <img class="thumbnail" src="../assets/images/{{ post.thumbnail }}" alt=""> -->
         <a class="btn btn-sheet-link title" href="{{ post.url }}">{{ post.title }}</a>
         <p class="composer">{{ post.composer }}</p>
         <p class="difficulty">{{ post.difficulty }}</p>
