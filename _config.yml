@@ -58,6 +58,8 @@ defaults:
       pdf-lyric: "#"
       yt-link: "#"
       muse-link: "#"
+      thumbnail: default-thumbnail.jpg
+      difficulty: Difficulty pending
   - 
     scope:
       path: "updates"
