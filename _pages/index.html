@@ -5,6 +5,9 @@ permalink: /
 ---
 
 <main>
+  <section class="logo-bg-green">
+
+  </section>
   <section class="updates logo-bg-green">
     <h2>Updates</h2>
     <ul class="update-list">
@@ -18,11 +21,18 @@ permalink: /
   <section class="sheet-preview logo-bg-blue secondary-bg-color">
     <h2>Sheet Music</h2>
     <p>Latest sheets:</p>
-    {% for post in site.categories.sheet-music limit:3 %}
-      <div class="latest-score">
-        <a class="btn btn-sheet-link" href="{{ post.url }}">{{ post.title }}</a>
-      </div>
-    {% endfor %}
+    <div class="grid-3">
+      {% for post in site.categories.sheet-music limit: 3%}
+        <div class="card">
+          <a href="{{ post.url }}" class="">
+          {% include lazyload.html %}
+          <p class="title">{{ post.title }}</p>
+          <p class="composer">{{ post.composer }}</p>
+          <p class="difficulty {{ post.difficulty | downcase }}">{{ post.difficulty }}</p>
+          </a>
+        </div>
+      {% endfor %}
+    </div>
     <a class="btn btn-info" href="/sheets/">More sheets -></a>
   </section>
 </main>

@@ -11,7 +11,7 @@ permalink: /sheets/
   <section class="sheets-info">
     <p>More sheets coming soon!</p>
     <p>All sheets are free and available in pdf format. Some also have links to MuseScore and/or YouTube so you can listen/watch.</p>
-    <p>My rating system</p>
+    <p class="difficulty-rating-txt"><span>My rating system:</span></p>
     <div class="difficulty-rating">
       <p class="difficulty easy">Easy</p>
       <p class="difficulty medium">Medium</p>
@@ -20,7 +20,7 @@ permalink: /sheets/
       <p class="difficulty advanced">Advanced</p>
     </div>
   </section>
-  <section class="container grid-3">
+  <section class="container grid-responsive">
     {% for post in site.categories.sheet-music %}
       <div class="card">
         <a href="{{ post.url }}" class="">
