@@ -8,4 +8,6 @@ pdf-link: london-underground-adam-kay.pdf
 pdf-lyric: london-underground-adam-kay-lyrics.pdf
 yt-link: "#"
 muse-link: https://musescore.com/user/28025112/scores/5700761
+difficulty: Hard
+thumbnail: 
 ---

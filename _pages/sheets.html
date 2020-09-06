@@ -8,6 +8,18 @@ permalink: /sheets/
 <!-- Short blurb about sheets -->
 <main>
   <h2>Sheets</h2>
+  <section class="sheets-info">
+    <p>More sheets coming soon!</p>
+    <p>All sheets are free and available in pdf format. Some also have links to MuseScore and/or YouTube so you can listen/watch.</p>
+    <p>My rating system</p>
+    <div class="difficulty-rating">
+      <p class="difficulty easy">Easy</p>
+      <p class="difficulty medium">Medium</p>
+      <p class="difficulty intermediate">Intermediate</p>
+      <p class="difficulty hard">Hard</p>
+      <p class="difficulty advanced">Advanced</p>
+    </div>
+  </section>
   <section class="container grid-3">
     {% for post in site.categories.sheet-music %}
       <div class="card">
@@ -15,13 +27,12 @@ permalink: /sheets/
         {% include lazyload.html %}
         <p class="title">{{ post.title }}</p>
         <p class="composer">{{ post.composer }}</p>
-        <p class="difficulty">{{ post.difficulty }}</p>
+        <p class="difficulty {{ post.difficulty | downcase }}">{{ post.difficulty }}</p>
         </a>
       </div>
     {% endfor %}
   </section>
-  <section>
-    <p>More sheets coming soon!</p>
-    <p>All sheets are free and available in pdf format. Some also have links to MuseScore and/or YouTube so you can listen.</p>
+  <section class="sheets-info">
+      <p>ImAKappa &copy; 2020</p>
   </section>
 </main>

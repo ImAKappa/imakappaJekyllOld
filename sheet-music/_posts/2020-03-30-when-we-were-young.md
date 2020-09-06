@@ -8,4 +8,6 @@ pdf-link: when-we-were-young-adele.pdf
 pdf-lyric: "#"
 yt-link: "#"
 muse-link: https://musescore.com/user/28025112/scores/6052568
+difficulty: Medium
+thumbnail: 
 ---

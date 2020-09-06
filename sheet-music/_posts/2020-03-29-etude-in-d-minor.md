@@ -7,4 +7,6 @@ pdf-link: etude-d-minor.pdf
 pdf-lyric: "#"
 yt-link: "#"
 muse-link: https://musescore.com/user/28025112/scores/6050137
+difficulty: Intermediate
+thumbnail: 
 ---
