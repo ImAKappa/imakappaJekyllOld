@@ -13,7 +13,7 @@ layout: yaboi
     {% unless page.muse-link == "#" %}
     <p><a class="btn btn-muse" href="{{ page.muse-link }}" target="_blank">Listen at Musescore</a></p>
     {% endunless %}
-    <p class="difficulty {{ page.difficulty }}">{{ page.difficulty }}</p>
+    <p class="difficulty {{ page.difficulty | downcase }}">{{ page.difficulty }}</p>
     <p>{{ page.date }}</p>
     <a class="btn btn-return" href="/sheets/">Back to Sheets</a>
   </section>
