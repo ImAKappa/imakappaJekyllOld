@@ -283,6 +283,25 @@ footer {
   padding: 65vh 0 20vh;
 }
 
+/* 404 Page */
+.message404 {
+  height: 100vh;
+  margin: auto;
+  padding: 0;
+}
+
+.message404 .container {
+  margin-top: 35vh;
+}
+
+.message404 h1 {
+  font-size: 9rem;
+  text-align: center;
+}
+
+span.title {
+  color: green;
+}
 
 /* ---------- */
 /* ASSETS */
@@ -467,6 +486,12 @@ a.btn-return {
   border: 3px solid var(--accent-color-3-border);
   background-color: var(--accent-color-3-bg);
   margin: 0;
+}
+
+a.btn-return:hover,
+a.btn-return:active {
+  border: 3px solid var(--accent-color-3-bg);
+  background-color: var(--accent-color-3-border);
 }
 
 a.btn-yt {
