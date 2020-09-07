@@ -449,6 +449,32 @@ p.difficulty {
   padding: 0 10px;
 }
 
+/* Individual Sheet Pages*/
+
+.indv-sheet-card picture {
+  display: flex;
+  margin: 0.5em;
+}
+
+.indv-sheet-card .thumbnail {
+    max-width: 400px;
+    margin: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .indv-sheet-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .card-half-1,
+  .card-half-2 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+}
+
 /* BUTTONS */
 a.btn {
   font-size: 1.6rem;
@@ -485,7 +511,6 @@ a.btn-sheet-link:active {
 a.btn-return {
   border: 3px solid var(--accent-color-3-border);
   background-color: var(--accent-color-3-bg);
-  margin: 0;
 }
 
 a.btn-return:hover,
