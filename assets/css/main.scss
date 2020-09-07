@@ -42,7 +42,7 @@
   --main-text-color: white;
   --main-border-color: black;
 
-  --difficulty-color-bg: rgb(24, 24, 24);
+  --difficulty-color-bg: rgb(27, 27, 27);
 
   --card-shadow-color: rgba(255,255,255,0.2);
 }
@@ -78,12 +78,32 @@ section.main-bg-color {
   background-color: var(--main-bg-color);
 }
 
+section.secondary-bg-color {
+  background-color: var(--secondary-bg-color);
+}
+
+/* Index Page sections */
+section.updates {
+  align-items: flex-start;
+}
+
+section.updates a.btn {
+  margin: 2em;
+}
+
+section.sheet-preview {
+  height: auto;
+}
+
+/* Sheets Page sections*/
+
 section.sheets-info {
   height: auto;
 }
 
-section.secondary-bg-color {
-  background-color: var(--secondary-bg-color);
+section.sheets-showcase {
+  height: auto;
+  padding: 0;
 }
 
 .logo-bg-green {
@@ -280,23 +300,18 @@ footer {
   margin: auto;
 }
 
+.grid-responsive,
 .grid-3 {
-  display: inline-grid;
-  margin: auto;
-  grid-template-columns: 1fr;
-}
-
-@media screen and (min-width: 500px) {
-  .grid-3 {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-.grid-responsive {
   display: grid;
-  
   margin: auto;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(200px, 400px);
+}
+
+@media screen and (min-width: 800px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, minmax(100px, 300px));
+    grid-column-gap: 50px;
+  }
 }
 
 @media screen and (min-width: 700px) {
@@ -314,6 +329,7 @@ footer {
 @media screen and (min-width: 1025px) {
   .grid-responsive {
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 20px;
   }
 }
 
@@ -343,6 +359,7 @@ footer {
 .card .thumbnail {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
 .card p {
@@ -429,6 +446,7 @@ a.btn-info {
   border: 3px solid var(--accent-color-1-border);
 }
 
+a.btn-info:hover,
 a.btn-info:active {
   background-color: var(--accent-color-1-border);
   border: 3px solid var(--accent-color-1-bg);
@@ -439,11 +457,7 @@ a.btn-sheet-link {
   background-color: var(--accent-color-2-bg);
 }
 
-a.btn-sheet-link:hover {
-  border: 3px solid var(--accent-color-2-bg);
-  background-color: var(--accent-color-2-border);
-}
-
+a.btn-sheet-link:hover,
 a.btn-sheet-link:active {
   border: 3px solid var(--accent-color-2-bg);
   background-color: var(--accent-color-2-border);
