@@ -3,18 +3,22 @@ layout: yaboi
 ---
 <main>
   <section>
-    <p><a class="btn btn-sheet-link" href="/./assets/sheet-pdfs/{{ page.pdf-link }}" target="_blank">{{page.title}} Sheet Music PDF 🡣</a></p>
-    {% unless page.pdf-lyric == "#" %}
-    <p><a class="btn btn-sheet-link" href="/./assets/sheet-pdfs/{{ page.pdf-lyric }}" target="_blank">{{page.title}} Sheet Music (+Lyrics) PDF 🡣</a></p>
-    {% endunless %}
-    {% unless page.yt-link == "#" %}
-    <p><a class="btn btn-yt" href="{{ page.yt-link }}" target="_blank">Watch on YouTube</a></p>
-    {% endunless %}
-    {% unless page.muse-link == "#" %}
-    <p><a class="btn btn-muse" href="{{ page.muse-link }}" target="_blank">Listen at Musescore</a></p>
-    {% endunless %}
-    <p>{{ page.difficulty }}</p>
-    <p>{{ page.date }}</p>
-    <a class="btn btn-return" href="/sheets/">Back to Sheets</a>
+    <div class="card">
+      <h2>{{ page.title }}</h2>
+      <p class="composer">{{ page.composer }}</p>
+      <p><a class="btn btn-sheet-link" href="/./assets/sheet-pdfs/{{ page.pdf-link }}" target="_blank">{{page.title}} Sheet Music PDF 🡣</a></p>
+      {% unless page.pdf-lyric == "#" %}
+      <p><a class="btn btn-sheet-link" href="/./assets/sheet-pdfs/{{ page.pdf-lyric }}" target="_blank">{{page.title}} Sheet Music (+Lyrics) PDF 🡣</a></p>
+      {% endunless %}
+      {% unless page.yt-link == "#" %}
+      <p><a class="btn btn-yt" href="{{ page.yt-link }}" target="_blank">Watch on YouTube</a></p>
+      {% endunless %}
+      {% unless page.muse-link == "#" %}
+      <p><a class="btn btn-muse" href="{{ page.muse-link }}" target="_blank">Listen at Musescore</a></p>
+      {% endunless %}
+      <p class="difficulty {{ page.difficulty | downcase }}">{{ page.difficulty }}</p>
+      <p>Date posted: {{ page.date | date: "%b %d, %Y"}}</p>
+      <a class="btn btn-return" href="/sheets/">Back to Sheets</a>
+    </div>
   </section>
 </main>
