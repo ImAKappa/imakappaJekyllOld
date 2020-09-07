@@ -10,7 +10,7 @@ permalink: /
   </section>
   <section class="updates logo-bg-green">
     <h2>Updates</h2>
-    <ul class="update-list">
+    <ul class="updates-list">
       {% for post in site.categories.updates limit:3 %}
       <li>{{ post.date }} - <a href="{{ post.url }}">{{ post.title}}</a></li>
       {% endfor %}
@@ -19,8 +19,7 @@ permalink: /
   </section>
 
   <section class="sheet-preview logo-bg-blue secondary-bg-color">
-    <h2>Sheet Music</h2>
-    <p>Latest sheets:</p>
+    <h2>Latest Sheet Music</h2>
     <div class="grid-3">
       {% for post in site.categories.sheet-music limit: 3%}
         <div class="card">

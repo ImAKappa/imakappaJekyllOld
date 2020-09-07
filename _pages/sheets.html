@@ -20,7 +20,8 @@ permalink: /sheets/
       <p class="difficulty advanced">Advanced</p>
     </div>
   </section>
-  <section class="container grid-responsive">
+  <section class="sheets-showcase">
+    <div class="grid-responsive">
     {% for post in site.categories.sheet-music %}
       <div class="card">
         <a href="{{ post.url }}" class="">
@@ -31,6 +32,7 @@ permalink: /sheets/
         </a>
       </div>
     {% endfor %}
+    </div>
   </section>
   <section class="sheets-info">
       <p>ImAKappa &copy; 2020</p>
