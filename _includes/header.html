@@ -10,13 +10,12 @@
       <div></div>
     </div>
   </button>
-  <!-- Navigation Links -->
-  <nav class="main-nav">
-    <ul class="nav-links-list">
-      <li><a class="{% if page.url == '/sheets/' %}active{% endif %}" href="/sheets/">Sheets</a></li><!--
-      --><li><a class="{% if page.url == '/about/' %}active{% endif %}" href="/about/">About</a></li><!--
-      --><li><a class="btn-muse" href="https://musescore.com/user/28025112" target="_blank">MuseScore</a></li><!--
-      --><li><a class="btn-yt" href="https://www.youtube.com/channel/UC-ij-Y_86B9H1ARnaxnhEtw" target="_blank">YouTube</a></li>
-    </ul>
-  </nav>
 </header>
+<!-- Navigation Links -->
+<nav class="main-nav">
+    <a class="{% if page.url == '/sheets/' %}active{% endif %}" href="/sheets/">Sheets</a><!--
+    --><a class="{% if page.url == '/about/' %}active{% endif %}" href="/about/">About</a><!--
+    --><a class="btn-muse" href="https://musescore.com/user/28025112" target="_blank">MuseScore</a><!--
+    --><a class="btn-yt" href="https://www.youtube.com/channel/UC-ij-Y_86B9H1ARnaxnhEtw" target="_blank">YouTube</a></li>
+</nav>
+<div class="overlay"></div>

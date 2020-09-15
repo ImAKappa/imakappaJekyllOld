@@ -33,16 +33,19 @@ if (currentTheme) {
 
 // Dropdown Nav for Mobile
 let dropdown = document.querySelector('.drop-btn');
-let dropContent = document.querySelector('.nav-links-list');
+let dropContent = document.querySelector('.main-nav');
+let overlayBlur = document.querySelector('.overlay');
 
 dropdown.onclick = function() {
   dropContent.classList.toggle("show");
+  overlayBlur.classList.toggle("overlay-blur");
 }
 
 window.onclick = function(event) {
   if (event.target != dropdown) {
     if (dropContent.classList.contains('show')) {
       dropContent.classList.remove('show');
+      overlayBlur.classList.remove("overlay-blur");
     }
   }
 }
