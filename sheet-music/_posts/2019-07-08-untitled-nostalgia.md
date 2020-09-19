@@ -7,6 +7,6 @@ pdf-link: untitled-nostalgia-mp3.pdf
 pdf-lyric: "#"
 yt-link: "#"
 muse-link: "#"
-difficulty: Easy
+difficulty: Medium
 thumbnail: 
 ---

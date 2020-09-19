@@ -102,6 +102,7 @@ section.sheet-preview {
 /* Sheets Page sections*/
 
 section.sheets-info {
+  margin-top: 2em;
   height: auto;
 }
 
@@ -483,6 +484,22 @@ p.difficulty {
   background-color: var(--main-bg-color);
   padding: 0 10px;
 }
+
+section.rating-system {
+  height: auto
+}
+
+.rating-system-explanation {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 80%;
+}
+
+// .rating-system-explanation > p {
+//   margin: auto;
+//   margin-bottom: 1em;
+// }
 
 /* Individual Sheet Pages*/
 
