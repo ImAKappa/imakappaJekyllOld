@@ -37,15 +37,20 @@ let dropContent = document.querySelector('.main-nav');
 let overlayBlur = document.querySelector('.overlay');
 
 dropdown.onclick = function() {
-  dropContent.classList.toggle("show");
+  dropContent.classList.toggle("show-nav");
   overlayBlur.classList.toggle("overlay-blur");
 }
 
 window.onclick = function(event) {
   if (event.target != dropdown) {
-    if (dropContent.classList.contains('show')) {
-      dropContent.classList.remove('show');
+    if (dropContent.classList.contains('show-nav')) {
+      dropContent.classList.remove('show-nav');
       overlayBlur.classList.remove("overlay-blur");
     }
   }
 }
+
+// Rating system dropdowns
+
+let ratingExplanation = document.querySelector('.rating-explanation');
+let 

@@ -28,6 +28,8 @@
   --difficulty-color-medium: blue;
   --difficulty-color-easy: green;
 
+  --rating-txt-line-color: rgb(100, 100, 100);
+
   --card-shadow-color: rgba(0,0,0,0.4);
 
   --overlay-shadow-color: rgba(51,51,51,0.7);
@@ -43,6 +45,8 @@
   --secondary-bg-color: rgb(34, 34, 34);
   --main-text-color: white;
   --main-border-color: black;
+
+  --rating-txt-line-color: rgb(44, 44, 44);
 
   --difficulty-color-bg: rgb(27, 27, 27);
 
@@ -211,7 +215,7 @@ a.title:active {
   z-index: auto;
 }
 
-.show {
+.show-nav {
   display: flex;
   flex-direction: column;
   transition-duration: 0.5s;
@@ -460,6 +464,20 @@ span.title {
   border-bottom: 3px solid var(--difficulty-color-easy);
 }
 
+.difficulty-rating-txt {
+  width: 80%; 
+  text-align: center; 
+  border-bottom: 2px solid var(--rating-txt-line-color); 
+  line-height: 0.1em;
+  margin: 1em auto; 
+}
+
+.difficulty-rating-txt span { 
+  background-color: var(--main-bg-color); 
+  padding:0 10px; 
+}
+
+
 .difficulty-rating {
   display: flex;
   flex-direction: row;
@@ -468,32 +486,20 @@ span.title {
   margin: auto;
 }
 
-p.difficulty {
-  margin: 0.5em;
+.difficulty-rating > .difficulty {
+  margin: 1em;
 }
 
-.difficulty-rating-txt {
-  border-bottom: 5px solid var(--difficulty-color-bg); 
-  line-height: 0.1em;
-  text-align: center;
-  width: 67%;
-  margin: 1.25em auto;
+.difficulty-rating > .difficulty > p {
+  margin: 0em;
 }
 
-.difficulty-rating-txt > span {
-  background-color: var(--main-bg-color);
-  padding: 0 10px;
+.rating-explanation {
+  display: none;
 }
 
-section.rating-system {
-  height: auto
-}
-
-.rating-system-explanation {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  width: 80%;
+.show-rating-expl {
+  display: block;
 }
 
 // .rating-system-explanation > p {
