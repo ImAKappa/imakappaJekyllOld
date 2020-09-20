@@ -14,7 +14,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
       {%if page.title %}
-        {{ page.title }}
+        ImAKappa | {{ page.title }}
       {% else %}
         {{ site.title }}
       {% endif %}
@@ -33,7 +33,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#000000">
   </head>
-  <body>
+  <body class="{{page.title | downcase }}">
     {% include header.html %}
     {{ content }}
   </body>

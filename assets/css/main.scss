@@ -37,6 +37,7 @@
   /* Numbers */
   --backimg-size: 47vh;
   --backimg-v-pos: 10em;
+  --border-radius: 4px;
 }
 
 [data-theme="dark"] {
@@ -157,15 +158,16 @@ a {
   font-size: 1.6rem;
   text-decoration: none;
   transition-duration: 0.4s;
+  border-radius: var(--border-radius);
 }
 
 li {
   font-size: 1.6rem;
 }
 
-button {
+// button {
 
-}
+// }
 
 /* NAV BAR */
 header {
@@ -214,6 +216,7 @@ a.title:active {
   padding: 6px;
   margin: 0.25em;
   border: 3px solid var(--main-border-color);
+  border-radius: var(--border-radius);
   background-color: var(--secondary-bg-color);
   color: var(--main-text-color);
   z-index: auto;
@@ -250,19 +253,6 @@ a.title:active {
   background-color: var(--overlay-shadow-color);
 }
 
-
-// .nav-links-list {
-//   width: 100%;
-//   height: 100%;
-//   padding: 0;
-//   display: none;
-// }
-
-// .main-nav li {
-//   display: inline;
-//   margin: 0;
-// }
-
 @media screen and (min-width: 800px) {
   header {
     flex-direction: row;
@@ -286,26 +276,6 @@ a.title:active {
     margin: 0.25em;
   }
 }
-
-/* BANNER STUFF */
-
-// .banner {
-//   display: flex;
-//   height: 65vh;
-//   
-// }
-
-// .banner-textbox {
-//   display: flex;
-//   border: 5px solid black;
-//   padding: 2vh 18vw;
-//   margin: auto auto;
-// }
-
-// .banner-text {
-//   text-align: center;
-//   font-size: 3.4rem;
-// }
 
 /* SHEET PREVIEW SECTION */
 .latest-score {
@@ -353,13 +323,17 @@ span.title {
 /* TOGGLES */
 
 
-
 /* CONTAINERS */
 .container {
   // border: 5px solid black;
   // transition-duration: 0.4s;
   // background-color: rgba(189, 21, 21, 0.2);
   height: 100%;
+  margin: auto;
+}
+
+.flex-container {
+  display: flex;
   margin: auto;
 }
 
@@ -406,10 +380,65 @@ span.title {
   background-color: var(--secondary-bg-color);
   box-shadow: 0 4px 8px 0 var(--card-shadow-color);
   transition-duration: 0.4s;
+  border-radius: 5px;
 }
 
 .card:hover {
   box-shadow: 0 8px 16px 0 var(--card-shadow-color);
+}
+
+/* Difficulty Rating System */
+.difficulty-rating-title {
+  width: 80%; 
+  text-align: center; 
+  border-bottom: 2px solid var(--rating-txt-line-color); 
+  line-height: 0.1em;
+  margin: 1em auto;
+}
+
+.difficulty-rating-title span { 
+  background-color: var(--main-bg-color);
+  padding:0 10px; 
+}
+
+.difficulty-ratings {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  text-align: center;
+  margin: 2em auto;
+}
+
+.difficulty-ratings > .difficulty {
+  margin: 0 1em;
+}
+
+.rating-btn {
+  background-color: var(--secondary-bg-color);
+  border: none;
+  color: var(--main-text-color);
+  font-family: 'Oswald', tahoma, arial, sans-serif;
+  font-size: 1.6rem;
+  padding: 4px 16px;
+  margin: 0;
+  appearance: none;
+  transition: 0.4s;
+}
+
+.rating-btn:active {
+  background-color: var(--difficulty-color-bg);
+  color: var(--main-text-color);
+  opacity: 0.7;
+  appearance: none;
+}
+
+.rating-explanation {
+  padding: 4px;
+  margin: 0 auto;
+  width: auto;
+  font-size: 1.3rem;
+  border-bottom: 3px solid var(--main-bg-color);
+  transition-duration: 0.4s;
 }
 
 /* SHEET MUSIC CARDS */
@@ -446,6 +475,7 @@ span.title {
   background-color: var(--difficulty-color-bg);
   color: var(--main-text-color);
   padding: 2px 10px;
+  border-radius: 2px;
 }
 
 .difficulty.advanced {
@@ -468,73 +498,9 @@ span.title {
   border-bottom: 3px solid var(--difficulty-color-easy);
 }
 
-.difficulty-rating-txt {
-  width: 80%; 
-  text-align: center; 
-  border-bottom: 2px solid var(--rating-txt-line-color); 
-  line-height: 0.1em;
-  margin: 1em auto;
-}
 
-.difficulty-rating-txt span { 
-  background-color: var(--main-bg-color);
-  padding:0 10px; 
-}
-
-.difficulty-rating {
-  display: flex;
-  flex-direction: row;
-  align-self: center;
-  text-align: center;
-  margin: 2em auto;
-}
-
-.difficulty-rating > .difficulty {
-  margin: 0 1em;
-}
-
-.rating-btn {
-  background-color: var(--secondary-bg-color);
-  border: none;
-  color: var(--main-text-color);
-  font-family: 'Oswald', tahoma, arial, sans-serif;
-  font-size: 1.6rem;
-  padding: 4px 16px;
-  margin: 0;
-  appearance: none;
-  transition: 0.4s;
-  z-index: 1;
-}
-
-.rating-btn:active {
-  background-color: var(--difficulty-color-bg);
-  color: var(--main-text-color);
-  opacity: 0.7;
-  appearance: none;
-}
-
-.rating-btn > p {
-  margin: 0em;
-}
-
-.rating-explanation {
-  display: none;
-}
-
-.show-rating-expl {
-  position: absolute;
-  display: block;
-  top: 57vh;
-  left: 20vw;
-}
-
-// .rating-system-explanation > p {
-//   margin: auto;
-//   margin-bottom: 1em;
-// }
 
 /* Individual Sheet Pages*/
-
 .indv-sheet-card picture {
   display: flex;
   margin: 0.5em;
@@ -628,9 +594,9 @@ a.btn-muse:hover {
 /* UNIQUE ASSETS */
 
 a.active {
-  background-color: (var(--main-border-color));
+  background-color: (var(--secondary-bg-color));
   color: #e7bb41;
-  border-bottom: 3px solid var(--main-text-color);
+  border: 3px solid var(--main-text-color);
 }
 
 input[type="checkbox"] {
@@ -646,6 +612,7 @@ input[type="checkbox"] {
   top: 1.4em;
   right: 2em;
   border: 2px solid var(--main-border-color);
+  border-radius: var(--border-radius);
 }
 
 .switch-mode {
@@ -658,13 +625,13 @@ input[type="checkbox"] {
 .drop-btn {
   display: flex;
   background-color: var(--secondary-bg-color);
-  border: none;
   cursor: pointer;
   position: absolute;
   top: 0.4em;
   left: 1.2em;
   padding: 0;
   border: 2px solid var(--main-border-color);
+  border-radius: var(--border-radius);
   transition-duration: 0.4s;
 }
 
@@ -676,7 +643,6 @@ input[type="checkbox"] {
   flex-direction: column;
   padding: 0.5em;
   align-items: center;
-
   display: flex;
   pointer-events: none;
 }
@@ -687,6 +653,7 @@ input[type="checkbox"] {
   background-color: var(--main-text-color);
   margin: 2px 0;
   pointer-events: none;
+  border-radius: var(--border-radius);
 }
 
 @media screen and (min-width: 800px) {
