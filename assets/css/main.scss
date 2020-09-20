@@ -28,7 +28,7 @@
   --difficulty-color-medium: blue;
   --difficulty-color-easy: green;
 
-  --rating-txt-line-color: rgb(100, 100, 100);
+  --rating-txt-line-color: rgb(170, 170, 170);
 
   --card-shadow-color: rgba(0,0,0,0.4);
 
@@ -106,8 +106,8 @@ section.sheet-preview {
 /* Sheets Page sections*/
 
 section.sheets-info {
-  margin-top: 2em;
   height: auto;
+  padding: 0;
 }
 
 section.sheets-showcase {
@@ -161,6 +161,10 @@ a {
 
 li {
   font-size: 1.6rem;
+}
+
+button {
+
 }
 
 /* NAV BAR */
@@ -469,28 +473,47 @@ span.title {
   text-align: center; 
   border-bottom: 2px solid var(--rating-txt-line-color); 
   line-height: 0.1em;
-  margin: 1em auto; 
+  margin: 1em auto;
 }
 
 .difficulty-rating-txt span { 
-  background-color: var(--main-bg-color); 
+  background-color: var(--main-bg-color);
   padding:0 10px; 
 }
-
 
 .difficulty-rating {
   display: flex;
   flex-direction: row;
   align-self: center;
   text-align: center;
-  margin: auto;
+  margin: 2em auto;
 }
 
 .difficulty-rating > .difficulty {
-  margin: 1em;
+  margin: 0 1em;
 }
 
-.difficulty-rating > .difficulty > p {
+.rating-btn {
+  background-color: var(--secondary-bg-color);
+  border: none;
+  color: var(--main-text-color);
+  font-family: 'Oswald', tahoma, arial, sans-serif;
+  font-size: 1.6rem;
+  padding: 4px 16px;
+  margin: 0;
+  appearance: none;
+  transition: 0.4s;
+  z-index: 1;
+}
+
+.rating-btn:active {
+  background-color: var(--difficulty-color-bg);
+  color: var(--main-text-color);
+  opacity: 0.7;
+  appearance: none;
+}
+
+.rating-btn > p {
   margin: 0em;
 }
 
@@ -499,7 +522,10 @@ span.title {
 }
 
 .show-rating-expl {
+  position: absolute;
   display: block;
+  top: 57vh;
+  left: 20vw;
 }
 
 // .rating-system-explanation > p {
