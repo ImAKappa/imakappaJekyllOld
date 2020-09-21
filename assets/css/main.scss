@@ -37,7 +37,7 @@
   /* Numbers */
   --backimg-size: 47vh;
   --backimg-v-pos: 10em;
-  --border-radius: 4px;
+  --border-radius: 2px;
 }
 
 [data-theme="dark"] {
@@ -181,7 +181,6 @@ header {
   margin: 0;
   padding: 0;
   background-color: var(--secondary-bg-color);
-  border-bottom: none;
   z-index: 3;
 }
 
@@ -203,7 +202,6 @@ a.title:active {
   border-bottom: 3px solid var(--main-border-color);
   background-color: var(--main-bg-color);
   transition-duration: 0.5s;
-
   position: fixed;
   top: -128px;
   z-index: 2;
@@ -215,12 +213,18 @@ a.title:active {
   text-decoration: none;
   padding: 6px;
   margin: 0.25em;
-  border: 3px solid var(--main-border-color);
   border-radius: var(--border-radius);
   background-color: var(--secondary-bg-color);
   color: var(--main-text-color);
   z-index: auto;
 }
+
+.main-nav a:hover,
+.main-nav a:active {
+  background-color: var(--main-border-color);
+  color: white;
+}
+
 
 .show-nav {
   display: flex;
@@ -228,13 +232,6 @@ a.title:active {
   transition-duration: 0.5s;
 
   top: 54px;
-}
-
-.main-nav a:hover,
-.main-nav a:active {
-  border: 3px solid var(--secondary-bg-color);
-  background-color: var(--main-border-color);
-  color: white;
 }
 
 .overlay {
@@ -262,18 +259,20 @@ a.title:active {
     display: flex;
     flex-direction: row;
     position: fixed;
-    top: 0.25em;
+    top: 0.2em;
     right: 1em;
     width: auto;
     background-color: var(--secondary-bg-color);
     border: none;
+    padding: 0;
     margin: 0;
     z-index: 3;
   }
   .main-nav a {
     display: inline-block;
-    padding: 8px;
+    padding: 10px 8px;
     margin: 0.25em;
+    color: white;
   }
 }
 
@@ -325,9 +324,6 @@ span.title {
 
 /* CONTAINERS */
 .container {
-  // border: 5px solid black;
-  // transition-duration: 0.4s;
-  // background-color: rgba(189, 21, 21, 0.2);
   height: 100%;
   margin: auto;
 }
@@ -441,11 +437,67 @@ span.title {
   transition-duration: 0.4s;
 }
 
+/* BUTTONS */
+a.btn {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: grey;
+  color: white;
+  margin: auto;
+  padding: 4px;
+}
+
+a.btn-info {
+  background-color: var(--accent-color-1-bg);
+}
+
+a.btn-info:hover,
+a.btn-info:active {
+  background-color: var(--accent-color-1-border);
+}
+
+a.btn-sheet-link {
+  background-color: var(--accent-color-2-bg);
+}
+
+a.btn-sheet-link:hover,
+a.btn-sheet-link:active {
+  background-color: var(--accent-color-2-border);
+}
+
+a.btn-return {
+  background-color: var(--accent-color-3-bg);
+}
+
+a.btn-return:hover,
+a.btn-return:active {
+  background-color: var(--accent-color-3-border);
+}
+
+a.btn-yt {
+  background-color: rgb(242, 0, 0);
+  color: white;
+}
+
+a.btn-yt:hover {
+  background-color: rgb(180, 0, 0);
+}
+
+a.btn-muse {
+  background-color: blue;
+  color: white;
+}
+
+a.btn-muse:hover {
+  background-color: rgb(0, 0, 146);
+}
+
 /* SHEET MUSIC CARDS */
 .card a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  font-size: 1.5rem;
 }
 
 .card .thumbnail {
@@ -514,7 +566,7 @@ span.title {
 @media screen and (min-width: 600px) {
   .indv-sheet-card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
   }
 
   .card-half-1,
@@ -525,78 +577,11 @@ span.title {
   }
 }
 
-/* BUTTONS */
-a.btn {
-  font-size: 1.6rem;
-  text-align: center;
-  border: 3px solid black;
-  background-color: grey;
-  color: white;
-  margin: auto;
-  padding: 4px;
-}
-
-a.btn-info {
-  background-color: var(--accent-color-1-bg);
-  border: 3px solid var(--accent-color-1-border);
-}
-
-a.btn-info:hover,
-a.btn-info:active {
-  background-color: var(--accent-color-1-border);
-  border: 3px solid var(--accent-color-1-bg);
-}
-
-a.btn-sheet-link {
-  border: 3px solid var(--accent-color-2-border);
-  background-color: var(--accent-color-2-bg);
-}
-
-a.btn-sheet-link:hover,
-a.btn-sheet-link:active {
-  border: 3px solid var(--accent-color-2-bg);
-  background-color: var(--accent-color-2-border);
-}
-
-a.btn-return {
-  border: 3px solid var(--accent-color-3-border);
-  background-color: var(--accent-color-3-bg);
-}
-
-a.btn-return:hover,
-a.btn-return:active {
-  border: 3px solid var(--accent-color-3-bg);
-  background-color: var(--accent-color-3-border);
-}
-
-a.btn-yt {
-  border: 3px solid rgb(180, 0, 0);
-  background-color: rgb(242, 0, 0);
-  color: white;
-}
-
-a.btn-yt:hover {
-  border: 3px solid red;
-  background-color: rgb(180, 0, 0);
-}
-
-a.btn-muse {
-  border: 3px solid rgb(0, 0, 146);
-  background-color: blue;
-  color: white;
-}
-
-a.btn-muse:hover {
-  border: 3px solid blue;
-  background-color: rgb(0, 0, 146);
-}
-
 /* UNIQUE ASSETS */
 
 a.active {
   background-color: (var(--secondary-bg-color));
   color: #e7bb41;
-  border: 3px solid var(--main-text-color);
 }
 
 input[type="checkbox"] {
