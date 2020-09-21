@@ -419,15 +419,13 @@ span.title {
   font-size: 1.6rem;
   padding: 4px 16px;
   margin: 0;
-  appearance: none;
+  outline: none;
   transition: 0.4s;
 }
 
 .rating-btn:active {
   background-color: var(--difficulty-color-bg);
-  color: var(--main-text-color);
-  opacity: 0.7;
-  appearance: none;
+  opacity: 0.6;
 }
 
 .rating-explanation {
