@@ -55,11 +55,11 @@ defaults:
       layout: "sheets-layout"
       permalink: ":categories/:title"
       composer: "ImAKappa"
-      pdf-lyric: "#"
-      yt-link: "#"
-      muse-link: "#"
+      pdf-lyric: false
+      yt-link: false
+      muse-link: false
       thumbnail: default-thumbnail
-      difficulty: Difficulty pending
+      difficulty: "Difficulty pending"
   - 
     scope:
       path: "updates"

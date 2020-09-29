@@ -1,5 +1,4 @@
 --- 
-layout: sheets-layout
 date: 2020-01-28
 categories: arrangements
 

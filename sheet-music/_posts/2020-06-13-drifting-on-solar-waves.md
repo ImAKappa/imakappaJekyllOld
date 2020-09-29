@@ -1,5 +1,4 @@
 --- 
-layout: sheets-layout
 date: 2020-06-13
 categories: original-works
 
