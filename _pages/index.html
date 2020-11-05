@@ -8,16 +8,6 @@ permalink: /
   <section class="logo-bg-green">
 
   </section>
-  <section class="updates logo-bg-green">
-    <h2>Updates</h2>
-    <ul class="updates-list">
-      {% for post in site.categories.updates limit:3 %}
-      <li>{{ post.date | date: "%b %d, %Y"}} - <a href="{{ post.url }}">{{ post.title}}</a></li>
-      {% endfor %}
-    </ul>
-    <a class="btn btn-info" href="/updates/">More updates -></a>
-  </section>
-
   <section class="sheet-preview logo-bg-blue secondary-bg-color">
     <h2>Latest Sheet Music</h2>
     <div class="grid-3">
@@ -33,6 +23,15 @@ permalink: /
       {% endfor %}
     </div>
     <a class="btn btn-info" href="/sheets/">More sheets -></a>
+  </section>
+  <section class="updates logo-bg-green">
+    <h2>Updates</h2>
+    <ul class="updates-list">
+      {% for post in site.categories.updates limit:3 %}
+      <li>{{ post.date | date: "%b %d, %Y"}} - <a href="{{ post.url }}">{{ post.title}}</a></li>
+      {% endfor %}
+    </ul>
+    <a class="btn btn-info" href="/updates/">More updates -></a>
   </section>
 </main>
 
