@@ -1,11 +1,5 @@
 --- 
 ---
-/* Modular CSS
-- Name things for what they are, not how they are supposed to look
-- don't use ids for stylistic elements
-- .<module>[-<component>][-<state>] {}
-
-*/
 
 :root {
   /* Light Theme*/
@@ -57,499 +51,42 @@
 }
 
 /* BASE*/
-html {
-  font-size: 10px;
-  height: 100%;
-}
-
-body {
-  font-family: 'Oswald', 'trebuchet ms', 'comic sans MS', arial, sans-serif;
-  line-height: 2em;
-  height: 100%;
-  margin: 0;
-  background-color: var(--main-bg-color);
-  color: var(--main-text-color);
-}
-
-main {
-  margin-top: 8em; /* So content isn't hidden under header */
-}
-
-section {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  height: 48vh;
-  padding: 2em 0;
-}
-
-section.main-bg-color {
-  background-color: var(--main-bg-color);
-}
-
-section.secondary-bg-color {
-  background-color: var(--secondary-bg-color);
-}
-
-/* Index Page sections */
-section.updates {
-  align-items: flex-start;
-}
-
-section.updates a.btn {
-  margin: 2em;
-}
-
-section.sheet-preview {
-  height: auto;
-}
-
-/* Sheets Page sections*/
-
-section.sheets-info {
-  height: auto;
-  padding: 0;
-}
-
-section.sheets-showcase {
-  height: auto;
-  padding: 0;
-}
-
-.logo-bg-green {
-  background-image: url('../images/imakappa-channel-logo-2020.svg');
-  background-position: center var(--backimg-v-pos);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: var(--backimg-size);
-}
-
-.logo-bg-blue {
-  background-image: url('../images/blue-imakappa-channel-logo-2020.svg');
-  background-position: center var(--backimg-v-pos);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: var(--backimg-size);
-}
-
-h1 {
-  font-size: 3.4rem;
-  margin: 0.5em;
-}
-
-h2 {
-  text-align: center;
-  font-size: 2.8rem;
-  margin: 1em;
-}
-
-h3 {
-  font-size: 2.2rem;
-  margin: 1em;
-}
-
-p {
-  font-size: 1.6rem;
-  margin: 1em;
-  text-align: center;
-}
-
-a {
-  font-size: 1.6rem;
-  text-decoration: none;
-  transition-duration: 0.4s;
-  border-radius: var(--border-radius);
-}
-
-li {
-  font-size: 1.6rem;
-}
-
-// button {
-
-// }
+@import "0-base/0-base_dir" ;
 
 /* NAV BAR */
-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  background-color: var(--secondary-bg-color);
-  z-index: 3;
-}
+@import "1-modules/nav";
 
-a.title {
-  color: var(--main-text-color);
-}
+/* FOOTER */
+@import "1-modules/footer";
 
-a.title:hover,
-a.title:active {
-  color: green;
-}
+/* Index Page sections */
+@import "2-layouts/index";
 
-.main-nav {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  border-bottom: 3px solid var(--main-border-color);
-  background-color: var(--main-bg-color);
-  transition-duration: 0.5s;
-  position: fixed;
-  top: -128px;
-  z-index: 2;
-}
+/* Sheets Page sections*/
+@import "2-layouts/sheets";
 
-.main-nav a {
-  display: block;
-  text-align: center;
-  text-decoration: none;
-  padding: 6px;
-  margin: 0.25em;
-  border-radius: var(--border-radius);
-  background-color: var(--secondary-bg-color);
-  color: var(--main-text-color);
-  z-index: auto;
-}
-
-.main-nav a:hover,
-.main-nav a:active {
-  background-color: var(--main-border-color);
-  color: white;
-}
-
-
-.show-nav {
-  display: flex;
-  flex-direction: column;
-  transition-duration: 0.5s;
-
-  top: 54px;
-}
-
-.overlay {
-  display: none;
-}
-
-.overlay-blur {
-  display: block;
-  backdrop-filter: blur(3px);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background-color: var(--overlay-shadow-color);
-}
-
-@media screen and (min-width: 800px) {
-  header {
-    flex-direction: row;
-    border-bottom: 3px solid var(--main-bg-color);
-  }
-  .main-nav {
-    display: flex;
-    flex-direction: row;
-    position: fixed;
-    top: 0.3em;
-    right: 1em;
-    width: auto;
-    background-color: var(--secondary-bg-color);
-    border: none;
-    padding: 0;
-    margin: 0;
-    z-index: 3;
-  }
-  .main-nav a {
-    display: inline-block;
-    padding: 8px 12px;
-    margin: 0.25em;
-    color: white;
-    font-size: 1.5rem;
-    border-bottom: 3px solid var(--secondary-bg-color);
-  }
-}
-
-/* SHEET PREVIEW SECTION */
-.latest-score {
-  margin: auto;
-}
+/* Individual Sheet Pages*/
+@import "2-layouts/sheets-preview";
 
 /* UPDATES */
 
 /* ABOUT */
-
-
-/* FOOTER */
-footer {
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  height: 20vh;
-  text-align: center;
-  padding: 65vh 0 20vh;
-}
+@import "2-layouts/about";
 
 /* 404 Page */
-.message404 {
-  height: 100vh;
-  margin: auto;
-  padding: 0;
-}
+@import "2-layouts/404";
 
-.message404 .container {
-  margin-top: 35vh;
-}
-
-.message404 h1 {
-  font-size: 9rem;
-  text-align: center;
-}
-
-span.title {
-  color: green;
-}
-
-/* ---------- */
-/* ASSETS */
-
-/* TOGGLES */
-
+/* -------- UTILS -------- */
 
 /* CONTAINERS */
-.container {
-  height: 100%;
-  margin: auto;
-}
+@import "4-utils/boxes";
 
-.flex-container {
-  display: flex;
-  margin: auto;
-}
-
-.grid-responsive,
-.grid-3 {
-  display: grid;
-  margin: auto;
-  grid-template-columns: minmax(200px, 400px);
-}
-
-@media screen and (min-width: 800px) {
-  .grid-3 {
-    grid-template-columns: repeat(3, minmax(100px, 300px));
-    grid-column-gap: 50px;
-  }
-}
-
-@media screen and (min-width: 700px) {
-  .grid-responsive {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-@media screen and (min-width: 800px) {
-  .grid-responsive {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-}
-
-@media screen and (min-width: 1025px) {
-  .grid-responsive {
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 20px;
-  }
-}
-
-.card {
-  display: flex;
-  flex-direction: column;
-  font-size: 1.6rem;
-  padding: 0;
-  margin: 1em;
-  align-items: center;
-  background-color: var(--secondary-bg-color);
-  box-shadow: 0 4px 8px 0 var(--card-shadow-color);
-  transition-duration: 0.4s;
-  border-radius: 5px;
-}
-
-.card:hover {
-  box-shadow: 0 8px 16px 0 var(--card-shadow-color);
-}
-
-/* Difficulty Rating System */
-.difficulty-rating-title {
-  width: 80%; 
-  text-align: center; 
-  border-bottom: 2px solid var(--rating-txt-line-color); 
-  line-height: 0.1em;
-  margin: 1em auto;
-}
-
-.difficulty-rating-title span { 
-  background-color: var(--main-bg-color);
-  padding:0 10px; 
-}
-
-.difficulty-ratings {
-  display: flex;
-  flex-direction: column;
-  align-self: center;
-  text-align: center;
-  margin: 1em auto;
-}
-
-.difficulty-ratings > .difficulty {
-  margin: 0 1em;
-}
-
-.rating-btn {
-  background-color: var(--secondary-bg-color);
-  border: none;
-  color: var(--main-text-color);
-  font-family: 'Oswald', tahoma, arial, sans-serif;
-  font-size: 1.6rem;
-  padding: 4px 16px;
-  margin: 0;
-  outline: none;
-  transition: 0.4s;
-}
-
-.rating-btn:active {
-  background-color: var(--difficulty-color-bg);
-  opacity: 0.6;
-}
-
-.rating-explanation {
-  padding: 4px;
-  margin: 0 auto;
-  width: auto;
-  font-size: 1.3rem;
-  border-bottom: 3px solid var(--main-bg-color);
-  transition-duration: 0.4s;
-}
-
-@media screen and (min-width: 600px) {
-  .difficulty-ratings {
-    flex-direction: row;
-    margin: 2em auto;
-  }
-
-  .rating-btn {
-    margin: 0;
-  }
-}
 
 /* BUTTONS */
-a.btn {
-  font-size: 1.5rem;
-  text-align: center;
-  background-color: grey;
-  color: white;
-  margin: auto;
-  padding: 4px;
-}
+@import "4-utils/buttons";
 
-a.btn-info {
-  background-color: var(--accent-color-1-bg);
-  border-bottom: 3px solid var(--accent-color-1-border);
-}
-
-a.btn-info:hover,
-a.btn-info:active {
-  background-color: var(--accent-color-1-border);
-  border-bottom: 3px solid var(--accent-color-1-bg);
-}
-
-a.btn-sheet-link {
-  background-color: var(--accent-color-2-bg);
-  border-bottom: 3px solid var(--accent-color-2-border);
-}
-
-a.btn-sheet-link:hover,
-a.btn-sheet-link:active {
-  background-color: var(--accent-color-2-border);
-  border-bottom: 3px solid var(--accent-color-2-bg);
-}
-
-a.btn-return {
-  background-color: var(--accent-color-3-bg);
-  border-bottom: 3px solid var(--accent-color-3-border);
-}
-
-a.btn-return:hover,
-a.btn-return:active {
-  background-color: var(--accent-color-3-border);
-  border-bottom: 3px solid var(--accent-color-3-bg);
-}
-
-a.btn-yt {
-  background-color: rgb(242, 0, 0);
-  border-bottom: 3px solid rgb(180, 0, 0);
-  color: white;
-}
-
-a.btn-yt:hover {
-  background-color: rgb(180, 0, 0);
-  border-bottom: 3px solid rgb(242, 0, 0);
-}
-
-a.btn-muse {
-  background-color: blue;
-  border-bottom: 3px solid rgb(0, 0, 146);
-  color: white;
-}
-
-a.btn-muse:hover {
-  background-color: rgb(0, 0, 146);
-  border-bottom: 3px solid blue;
-}
-
-/* SHEET MUSIC CARDS */
-.card a {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-size: 1.5rem;
-}
-
-.card .thumbnail {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.card p {
-  margin: 0.5em;
-}
-
-.card .title {
-  background-color: var(--difficulty-color-bg);
-  color: var(--main-text-color);
-  width: 98%;
-  margin: 0;
-  padding: 6px;
-}
-
-.card .composer {
-  color: var(--accent-color-3-border);
-}
-
-.card .difficulty {
-  width: auto;
-  background-color: var(--difficulty-color-bg);
-  color: var(--main-text-color);
-  padding: 2px 10px;
-  border-radius: 2px;
-}
+/* CARDS */
+@import "4-utils/cards";
 
 .difficulty.advanced {
   border-bottom: 3px solid var(--difficulty-color-advanced);
@@ -571,40 +108,10 @@ a.btn-muse:hover {
   border-bottom: 3px solid var(--difficulty-color-easy);
 }
 
+/* COLOUR CLASSES */
+@import "4-utils/colour-classes";
 
-
-/* Individual Sheet Pages*/
-.indv-sheet-card picture {
-  display: flex;
-  margin: 0.5em;
-}
-
-.indv-sheet-card .thumbnail {
-    max-width: 400px;
-    margin: auto;
-}
-
-@media screen and (min-width: 600px) {
-  .indv-sheet-card {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-  }
-
-  .card-half-1,
-  .card-half-2 {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-  }
-}
-
-/* UNIQUE ASSETS */
-
-a.active {
-  background-color: (var(--secondary-bg-color));
-  color: var(--main-text-color);
-}
-
+/* THEME SWITCHER */
 input[type="checkbox"] {
   width: 16px;
   height: 16px;
@@ -628,6 +135,11 @@ input[type="checkbox"] {
   width: 0;
 }
 
+/* NAV DROPDOWN UTILS */
+.drop-btn:active {
+  background-color: var(--main-bg-color);
+}
+
 .drop-btn {
   display: flex;
   background-color: var(--secondary-bg-color);
@@ -639,10 +151,6 @@ input[type="checkbox"] {
   border: 2px solid var(--main-border-color);
   border-radius: var(--border-radius);
   transition-duration: 0.4s;
-}
-
-.drop-btn:active {
-  background-color: var(--main-bg-color);
 }
 
 .hamburger-menu-icon {
@@ -674,12 +182,5 @@ input[type="checkbox"] {
   }
 }
 
-.hidden-text-secondary {
-  color: var(--secondary-bg-color);
-}
-
-.hidden-text-main {
-  color: var(--main-bg-color);
-}
 
 

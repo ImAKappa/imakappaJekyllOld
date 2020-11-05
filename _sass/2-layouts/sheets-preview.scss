@@ -1,0 +1,23 @@
+.indv-sheet-card picture {
+  display: flex;
+  margin: 0.5em;
+}
+
+.indv-sheet-card .thumbnail {
+    max-width: 400px;
+    margin: auto;
+}
+
+@media screen and (min-width: 600px) {
+  .indv-sheet-card {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .card-half-1,
+  .card-half-2 {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+}

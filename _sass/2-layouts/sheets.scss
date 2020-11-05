@@ -1,0 +1,72 @@
+section.sheets-info {
+  height: auto;
+  padding: 0;
+}
+
+section.sheets-showcase {
+  height: auto;
+  padding: 0;
+}
+
+/* Difficulty Rating System */
+.difficulty-rating-title {
+  width: 80%; 
+  text-align: center; 
+  border-bottom: 2px solid var(--rating-txt-line-color); 
+  line-height: 0.1em;
+  margin: 1em auto;
+}
+
+.difficulty-rating-title span { 
+  background-color: var(--main-bg-color);
+  padding:0 10px; 
+}
+
+.difficulty-ratings {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  text-align: center;
+  margin: 1em auto;
+}
+
+.difficulty-ratings > .difficulty {
+  margin: 0 1em;
+}
+
+.rating-btn {
+  background-color: var(--secondary-bg-color);
+  border: none;
+  color: var(--main-text-color);
+  font-family: 'Oswald', tahoma, arial, sans-serif;
+  font-size: 1.6rem;
+  padding: 4px 16px;
+  margin: 0;
+  outline: none;
+  transition: 0.4s;
+}
+
+.rating-btn:active {
+  background-color: var(--difficulty-color-bg);
+  opacity: 0.6;
+}
+
+.rating-explanation {
+  padding: 4px;
+  margin: 0 auto;
+  width: auto;
+  font-size: 1.3rem;
+  border-bottom: 3px solid var(--main-bg-color);
+  transition-duration: 0.4s;
+}
+
+@media screen and (min-width: 600px) {
+  .difficulty-ratings {
+    flex-direction: row;
+    margin: 2em auto;
+  }
+
+  .rating-btn {
+    margin: 0;
+  }
+}
