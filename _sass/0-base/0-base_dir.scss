@@ -1,0 +1,86 @@
+html {
+  font-size: 10px;
+  height: 100%;
+}
+
+body {
+  font-family: 'Oswald', 'trebuchet ms', 'comic sans MS', arial, sans-serif;
+  line-height: 2em;
+  height: 100%;
+  margin: 0;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+
+.spacer {
+  margin-top: 9em; /* So content isn't hidden under header */
+}
+
+// main {
+  
+// }
+
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  height: 48vh;
+  padding: 2em 0;
+}
+
+section.main-bg-color {
+  background-color: var(--main-bg-color);
+}
+
+section.secondary-bg-color {
+  background-color: var(--secondary-bg-color);
+}
+
+.logo-bg-green {
+  background-image: url('../images/imakappa-channel-logo-2020.svg');
+  background-position: center var(--backimg-v-pos);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: var(--backimg-size);
+}
+
+.logo-bg-blue {
+  background-image: url('../images/blue-imakappa-channel-logo-2020.svg');
+  background-position: center var(--backimg-v-pos);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: var(--backimg-size);
+}
+
+h1 {
+  font-size: 3.4rem;
+  margin: 0.5em;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  margin: 1em;
+}
+
+h3 {
+  font-size: 2.2rem;
+  margin: 1em;
+}
+
+p {
+  font-size: 1.6rem;
+  margin: 1em;
+  text-align: center;
+}
+
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  border-radius: var(--border-radius);
+}
+
+li {
+  font-size: 1.6rem;
+}

@@ -1,0 +1,63 @@
+a.btn {
+  font-size: 1.5rem;
+  text-align: center;
+  background-color: grey;
+  color: white;
+  margin: auto;
+  padding: 4px;
+}
+
+a.btn-info {
+  background-color: var(--accent-color-1-bg);
+  border-bottom: 3px solid var(--accent-color-1-border);
+}
+
+a.btn-info:hover,
+a.btn-info:active {
+  background-color: var(--accent-color-1-border);
+  border-bottom: 3px solid var(--accent-color-1-bg);
+}
+
+a.btn-sheet-link {
+  background-color: var(--accent-color-2-bg);
+  border-bottom: 3px solid var(--accent-color-2-border);
+}
+
+a.btn-sheet-link:hover,
+a.btn-sheet-link:active {
+  background-color: var(--accent-color-2-border);
+  border-bottom: 3px solid var(--accent-color-2-bg);
+}
+
+a.btn-return {
+  background-color: var(--accent-color-3-bg);
+  border-bottom: 3px solid var(--accent-color-3-border);
+}
+
+a.btn-return:hover,
+a.btn-return:active {
+  background-color: var(--accent-color-3-border);
+  border-bottom: 3px solid var(--accent-color-3-bg);
+}
+
+a.btn-yt {
+  background-color: rgb(242, 0, 0);
+  border-bottom: 3px solid rgb(180, 0, 0);
+  color: white;
+}
+
+a.btn-yt:hover {
+  background-color: rgb(180, 0, 0);
+  border-bottom: 3px solid rgb(242, 0, 0);
+}
+
+a.btn-muse {
+  background-color: #1f74bd;
+  border-bottom: 3px solid rgb(31, 77, 128);
+  color: white;
+}
+
+a.btn-muse:hover {
+  background-color: rgb(31, 77, 128);
+  border-bottom: 3px solid #1f74bd;
+}

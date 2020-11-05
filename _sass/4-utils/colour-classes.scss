@@ -1,0 +1,12 @@
+a.active {
+  background-color: (var(--secondary-bg-color));
+  color: var(--main-text-color);
+}
+
+.hidden-text-secondary {
+  color: var(--secondary-bg-color);
+}
+
+.hidden-text-main {
+  color: var(--main-bg-color);
+}
