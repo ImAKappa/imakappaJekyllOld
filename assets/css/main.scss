@@ -22,6 +22,8 @@
   --difficulty-color-medium: blue;
   --difficulty-color-easy: green;
 
+  --theme-switch-btn: #cccccc;
+
   --rating-txt-line-color: rgb(170, 170, 170);
 
   --card-shadow-color: rgba(0,0,0,0.4);
@@ -48,6 +50,9 @@
   --card-shadow-color: rgba(255,255,255,0.2);
 
   --overlay-shadow-color: rgba(17, 17, 17, 0.7);
+
+  --theme-switch-btn: rgb(26, 26, 26);
+  --theme-switch-btn-desktop: rgb(36, 36, 36);
 }
 
 /* BASE*/
@@ -112,28 +117,13 @@
 @import "4-utils/colour-classes";
 
 /* THEME SWITCHER */
-input[type="checkbox"] {
-  width: 16px;
-  height: 16px;
-}
+@import "4-utils/theme-switcher";
 
-.switcheroo {
-  display: flex;
-  background-color: var(--secondary-bg-color);
-  padding: 0;
-  position: absolute;
-  top: 1.4em;
-  right: 2em;
-  border: 2px solid var(--main-border-color);
-  border-radius: var(--border-radius);
-}
+// input[type="checkbox"] {
+//   width: 16px;
+//   height: 16px;
+// }
 
-.switch-mode {
-  cursor: pointer;
-  opacity: 0;
-  height: 0;
-  width: 0;
-}
 
 /* NAV DROPDOWN UTILS */
 .drop-btn:active {
@@ -177,10 +167,14 @@ input[type="checkbox"] {
     display: none;
   }
 
-  .switcheroo {
-    top: 7em;
+  .theme-switch {
+    top: 11em;
+    right: 5em;
+    background-color: var(--main-bg-color);
+    
+  }
+
+  input:checked + .slider {
+    background-color: var(--theme-switch-btn-desktop);
   }
 }
-
-
-

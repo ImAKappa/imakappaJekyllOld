@@ -1,7 +1,12 @@
 <header class="main-header">
   <a class="title" href="/"><h1>ImAKappa</h1></a>
-  <div class="switcheroo">
-    <input type="checkbox" class="switch-mode">
+  <!-- Theme Switcher Courtesy of Ananya Neogi -->
+  <!-- https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8 -->
+  <div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox">
+      <input type="checkbox" id="checkbox">
+      <div class="slider round"></div>
+    </label>
   </div>
   <button class="drop-btn">
     <div class="hamburger-menu-icon">
@@ -11,6 +16,7 @@
     </div>
   </button>
 </header>
+<div class="spacer"></div>
 <!-- Navigation Links -->
 <nav class="main-nav">
     <a class="btn-sheet-link {% if page.url == '/sheets/' %}active{% endif %}" href="/sheets/">Sheets</a><!--

@@ -12,9 +12,13 @@ body {
   color: var(--main-text-color);
 }
 
-main {
-  margin-top: 8em; /* So content isn't hidden under header */
+.spacer {
+  margin-top: 9em; /* So content isn't hidden under header */
 }
+
+// main {
+  
+// }
 
 section {
   display: flex;
